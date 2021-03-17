@@ -1,7 +1,7 @@
 import Layout from "./components/Layout/Layout";
- import Logo from "./components/Logo/Logo";
-import Nav from "./components/Nav/Nav";
- import classes from "./components/Toolbar/Toolbar";
+//  import Logo from "./components/Logo/Logo";
+// import Nav from "./components/Nav/Nav";
+ import Toolbar from "./components/Toolbar/Toolbar";
 
 
 function App() {
@@ -9,8 +9,6 @@ function App() {
     <div className="App">
      <Layout>
         <Toolbar/>
-       <Logo />
-       <Nav /> 
        awesome builder by soltonbekova aiymkyz
      </Layout>
     </div>
