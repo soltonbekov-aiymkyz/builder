@@ -1,6 +1,6 @@
 import classes from "./Toolbar.module.css";
 
-const Tollbar = ({  }) => {
+const Toolbar = ({  }) => {
     return (
         <div className={classes=toolbar}>
 
@@ -9,4 +9,4 @@ const Tollbar = ({  }) => {
     )
 }
 
-export default toolbar;
+export default Toolbar;
