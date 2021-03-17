@@ -1,7 +1,7 @@
 import classes from "./Drawer.module.css";
 import Nav from "../Nav/Nav"
 import Logo from "../Logo/Logo"
-const Toolbar = ({  }) => {
+const Drawer = ({  }) => {
     return (
         <div className={classes.Drawer}>
         <Logo />
@@ -9,5 +9,4 @@ const Toolbar = ({  }) => {
         </div>
     )
 }
-
 export default Drawer;
