@@ -1,9 +1,9 @@
 import classes from "./Nav.module.css";
 
-const Nav = ({  }) => {
+const Nav = ({children  }) => {
     return (
         <div className={classes.Nav}>
-
+       Nav
 
         </div>
     )
