@@ -1,6 +1,6 @@
 import classes from "./Nav.module.css";
 
-const Tollbar = ({  }) => {
+const Nav = ({  }) => {
     return (
         <div className={classes.Nav}>
 
