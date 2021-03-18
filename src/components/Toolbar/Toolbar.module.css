@@ -3,10 +3,9 @@
     justify-content: space-between;
     padding: 10px;
     color: white;
-    background-color: tomato;
+    background-color: rgb(184, 196, 212);
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     position: sticky;
     top:0;
     left:0;
-    
 }
