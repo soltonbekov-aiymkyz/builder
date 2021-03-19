@@ -1,3 +1,8 @@
-/* .Logo{
-    border: 3px solid yellow
-} */
+.Logo img {
+    height: 3rem;
+    margin:1rem;
+}
+.Logo{
+    display: flex;
+    align-items: center;
+}
