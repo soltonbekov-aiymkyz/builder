@@ -1,4 +1,4 @@
-.Drawer{ 
+.Drawer .content{ 
   width: 250px;
 height: 100%;
 position: fixed;
@@ -12,3 +12,9 @@ background-color: rgb(184, 196, 212);
 
 }
 
+.open{
+    transform: translateX(0);
+}
+.close{
+    transform: translateX(-260px);
+}
