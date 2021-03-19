@@ -4,8 +4,11 @@ import Logo from "../Logo/Logo"
 const Drawer = () => {
     return (
         <div className={classes.Drawer}>
+            <Backdrop />
+            <div className={classes.content}>
         <Logo />
         <Nav />
+        </div>
         </div>
     )
 }
