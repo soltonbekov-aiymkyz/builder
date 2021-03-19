@@ -15,3 +15,8 @@
   .DrawerOpen > div:not(:last-child) {
     margin-bottom: .5rem;
   }
+  @media (min-width: 550px) {
+    .DrawerOpen {
+      display: none;
+    }
+  }
