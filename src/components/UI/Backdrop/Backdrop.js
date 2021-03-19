@@ -1,10 +1,10 @@
 
 import classes from "./Backdrop.module.classes";
 
-const Nav = () => {
+const Backdrop= () => {
     return (
-        <div className={classes.Nav}>
-       Nav
+        <div className={classes.Backdrop}>
+    
 
         </div>
     )
