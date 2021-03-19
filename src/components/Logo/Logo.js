@@ -1,5 +1,5 @@
 import classes from "./Logo.module.css";
-import logo from "../../images/logosvg";
+import logo from "../../images/logosvg.svg";
 const Logo = () => {
     return (
         <div className={classes.logo}>
