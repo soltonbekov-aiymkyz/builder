@@ -1,8 +1,8 @@
 import classes from "./Backdrop.module.css";
 
-const Backdrop = () => {
+const Backdrop = ({ show, click }) => {
   return (
-   show ? <div className={classes.Backdrop}>: null</div>
+    show ? <div className={classes.Backdrop} onClick={click}></div> : null
   );
 }
 
