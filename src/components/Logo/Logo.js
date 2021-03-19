@@ -1,6 +1,6 @@
 import classes from "./Logo.module.css";
 
-const Logo = ({  }) => {
+const Logo = () => {
     return (
         <div className={classes.logo}>
 
