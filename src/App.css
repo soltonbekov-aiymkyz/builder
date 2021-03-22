@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 *{
     box-sizing: border-box;
 }
 body {
     margin: 0 ;
-    font-family:'Ubuntu', sans-serif; ;
+    /* font-family:'Ubuntu', sans-serif;  */
+
+   font-family: 'Berkshire Swash', cursive;
 }
