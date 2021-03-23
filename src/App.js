@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
      <Layout>
-      <h1> awesome builder by soltonbekova aiymkyz</h1>
+      <h1> Skyscaper builder by soltonbekova aiymkyz</h1>
      </Layout>
     </div>
   );
