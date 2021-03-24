@@ -1,0 +1,8 @@
+.SkyscaperPreview{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: lightcyan;
+    top:0;
+    left:0;
+}
