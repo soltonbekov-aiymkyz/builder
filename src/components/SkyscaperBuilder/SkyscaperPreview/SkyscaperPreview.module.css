@@ -1,10 +1,10 @@
 .SkyscaperPreview{
-    display: flex;
+     flex:0 0 400px;
+     height: 400px;
+     display: flex;
     justify-content: center;
     padding: 1rem;
     color: lightcyan;
-    width: 250px;
-    height: 260px;
     margin-bottom: 1rem;
     margin-right: 1rem;
 }

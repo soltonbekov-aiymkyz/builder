@@ -1,4 +1,4 @@
-import classes from "./SkyscaperLevel.module.css";
+//import classes from "./SkyscaperLevel.module.css";
 const  SkyscaperLevel = ({type}) => {
     return (
         <div>{type}</div>
