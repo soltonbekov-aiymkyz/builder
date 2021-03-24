@@ -1,0 +1,8 @@
+.SkyscaperControls{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: pink;
+    top:0;
+    left:0;
+}
