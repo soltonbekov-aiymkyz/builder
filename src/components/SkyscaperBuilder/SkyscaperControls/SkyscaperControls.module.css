@@ -1,10 +1,10 @@
 .SkyscaperControls{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
-    color: pink;
-    width: 250px;
-    height: 260px;
+    /* justify-content: center; */
+    background-color: pink;
+    /* width: 250px;
+    height: 260px; */
     padding: 1rem;
+    color:white;
 }
