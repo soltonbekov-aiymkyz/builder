@@ -1,18 +1,18 @@
 import classes from "./SkyscaperBuilder.module.css";
-import classes from "./Skyscape/SkyscaperLevel.js";
-const  SkyscaperPreview = () => {
+import SkyscaperPreview from "./SkyscaperPreview/SkyscaperPreview";
+import SkyscaperControls from "./SkyscaperControls/SkyscaperControls";
+const  SkyscaperBuilder = () => {
     const levels = {
-        restaurantfloor: 1,
-        livingfloor: 2,
-        shopfloor: 1,
+        restaurantfloor: 10,
+        livingfloor: 20,
+        shopfloor: 10,
     };
     return (
-        <div className={classes.SkyscaperPreview}>
+        <div className={classes.SkyscaperBuilder}>
             <SkyscaperPreview levels = {levels}/>
             <SkyscaperControls />
     
         </div>
     )
 }
-
 export default SkyscaperBuilder;
