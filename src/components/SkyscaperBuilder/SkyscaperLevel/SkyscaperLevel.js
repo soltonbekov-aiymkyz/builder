@@ -12,14 +12,12 @@ function getPosition(levelWidth){
         const skyscaperDiameter = 380;
         const skyscaperRadius = skyscaperDiameter / 2;
         const levelRadius = parseInt(levelWidth) / 2;
-    
         const levelTop = Math.round(Math.random() *skycaperDiameter);
         const levelLeft = Math.round(Math.random() * skyscaperDiameter);
     
         const distance = Math.sqrt(
           Math.pow(levelTop - skyscaperRadius, 2) + Math.pow(levelLeft - levelRadius, 2)
         ) + levelRadius;
-    
         return distance < skyscaperRadius
           ? {
             top: levelTop - levelRadius,
@@ -27,7 +25,6 @@ function getPosition(levelWidth){
           }
           : getPosition(levelWidth);
       }
-
       if (!fixed) {
         const position = getPosition(types[type].width);
         types[type].top = position.top + "px";
@@ -41,7 +38,4 @@ function getPosition(levelWidth){
       );
 }
 
-
-//export default SkyscaperLevel;
-
-export default React.memo(SkyscaperLevel);
+export default SkyscaperLevel;
