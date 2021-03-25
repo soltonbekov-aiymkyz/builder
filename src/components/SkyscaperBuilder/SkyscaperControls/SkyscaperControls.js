@@ -1,4 +1,4 @@
-import classes from "./SkyscaperControls.module.css";
+/*import classes from "./SkyscaperControls.module.css";
 import SkyscaperControls from "./SkyscaperControls/SkyscaperControls";
 const  SkyscaperControls = ({ levels, addLevel, removeLevel }) => {
   const results = [];
@@ -9,12 +9,6 @@ const  SkyscaperControls = ({ levels, addLevel, removeLevel }) => {
         remove={removeLevel}
         type={Level} />)
   }
-  
-  
-
-
-
-
 
   return (
         <div className={classes.SkyscaperControls}>
@@ -22,6 +16,14 @@ const  SkyscaperControls = ({ levels, addLevel, removeLevel }) => {
       {results}
         </div>
     )
+}
+export default SkyscaperControls;*/
+import classes from "./SkyscaperControls.module.css";
+
+const SkyscaperControls = () => {
+  return (
+    <div className={classes.SkyscaperControls}>Controls</div>
+  );
 }
 
 export default SkyscaperControls;
