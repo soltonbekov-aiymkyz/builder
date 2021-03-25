@@ -8,15 +8,27 @@ for (const level in levels){
     result.push(<SkyscaperLevel key={level + i}  type={level}/>)
 }
 }
-    return (
-        <div className={classes.SkyscaperPreview}>
-      <div
-        className={classes.levels}
-        style={{ backgroundColor: yelow }  }>
-        {result}
-      </div>
+//     return (
+//         <div className={classes.SkyscaperPreview}>
+//       <div
+//         className={classes.levels}
+//         style={{ backgroundColor: yelow }  }>
+//         {result}
+//       </div>
+//     </div>
+//     )
+// }
+
+return ( 
+    <div className = {classes.SkyscaperPreview}>
+        <div className={classes.levels}>
+            {result}
+        </div>
     </div>
-    )
+);
 }
 export default SkyscaperPreview;
 
+
+
+ 
