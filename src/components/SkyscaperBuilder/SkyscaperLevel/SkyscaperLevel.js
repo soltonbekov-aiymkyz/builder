@@ -1,5 +1,6 @@
-import reactDom from "react-dom";
-
+//import reactDom from "react-dom";
+import React from "react";
+import classes from "./PizzaIngredient.module.css";
 //import classes from "./SkyscaperLevel.module.css";
 const  SkyscaperLevel = ({type}) => {
 const types ={
@@ -7,25 +8,24 @@ const types ={
     livingfloor:  {backgroundColor:blue,width:"35px",height:"35px" },
     shopfloor:   {backgroundColor:violet,width:"35px", height:"35px"},
 }
-
 function getPosition(levelWidth){
-        const pizzaDiameter = 380;
-        const pizzaRadius = pizzaDiameter / 2;
-        const ingredientRadius = parseInt(ingredientWidth) / 2;
+        const skyscaperDiameter = 380;
+        const skyscaperRadius = skyscaperDiameter / 2;
+        const levelRadius = parseInt(levelWidth) / 2;
     
-        const ingredientTop = Math.round(Math.random() * pizzaDiameter);
-        const ingredientLeft = Math.round(Math.random() * pizzaDiameter);
+        const levelTop = Math.round(Math.random() *skycaperDiameter);
+        const levelLeft = Math.round(Math.random() * skyscaperDiameter);
     
         const distance = Math.sqrt(
-          Math.pow(ingredientTop - pizzaRadius, 2) + Math.pow(ingredientLeft - pizzaRadius, 2)
-        ) + ingredientRadius;
+          Math.pow(levelTop - skyscaperRadius, 2) + Math.pow(levelLeft - levelRadius, 2)
+        ) + levelRadius;
     
-        return distance < pizzaRadius
+        return distance < skyscaperRadius
           ? {
-            top: ingredientTop - ingredientRadius,
-            left: ingredientLeft - ingredientRadius
+            top: levelTop - levelRadius,
+            left: levelLeft - levelRadius
           }
-          : getPosition(ingredientWidth);
+          : getPosition(levelWidth);
       }
 
       if (!fixed) {
@@ -37,9 +37,11 @@ function getPosition(levelWidth){
       types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
     
       return (
-        <div className={classes.PizzaIngredient} style={types[type]}></div>
+        <div className={classes.SkyscaperLevel} style={types[type]}></div>
       );
 }
 
 
-export default SkyscaperLevel;
+//export default SkyscaperLevel;
+
+export default React.memo(SkyscaperLevel);
