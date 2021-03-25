@@ -1,6 +1,6 @@
 //import reactDom from "react-dom";
 import React from "react";
-import classes from "./PizzaIngredient.module.css";
+import classes from "./SkyscaperLevel.module.css";
 //import classes from "./SkyscaperLevel.module.css";
 const  SkyscaperLevel = ({type}) => {
 const types ={
