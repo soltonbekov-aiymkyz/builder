@@ -1,5 +1,5 @@
 import classes from "./SkyscaperControls.module.css";
-import SkyscaperControl from "./SkyscaperControls/SkyscaperControls";
+import SkyscaperControls from "./SkyscaperControls/SkyscaperControls";
 const  SkyscaperControls = ({ levels, addLevel, removeLevel }) => {
   const results = [];
   for (const level in levels) {
@@ -11,6 +11,11 @@ const  SkyscaperControls = ({ levels, addLevel, removeLevel }) => {
   }
   
   
+
+
+
+
+
   return (
         <div className={classes.SkyscaperControls}>
       <strong>Levels</strong>
