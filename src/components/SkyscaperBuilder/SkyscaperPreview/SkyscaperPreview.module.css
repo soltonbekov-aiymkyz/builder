@@ -8,4 +8,15 @@
     background-color: lightcyan;
     margin-bottom: 1rem;
     margin-right: 1rem;
+
+
+
 }
+
+
+.levels {
+    width: 380px;
+    height: 380px;
+    border-radius: 100%;
+    position: relative;
+  }
