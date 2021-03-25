@@ -19,4 +19,4 @@ const  SkyscaperControls = ({ levels, addLevel, removeLevel }) => {
     )
 }
 
-export default SkyscaperControls;
+export default SkyscaperControl;
