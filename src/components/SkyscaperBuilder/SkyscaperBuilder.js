@@ -1,6 +1,6 @@
 import classes from "./SkyscaperBuilder.module.css";
 import SkyscaperPreview from "./SkyscaperPreview/SkyscaperPreview";
-import SkyscaperControls from "./SkyscaperControls/SkyscaperControls";
+import SkyscaperControls from "./SkyscaperControl/SkyscaperControl";
 const  SkyscaperBuilder = () => {
     const levels = {
         restaurantfloor: 10,
