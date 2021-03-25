@@ -1,9 +1,9 @@
 import classes from "./SkyscaperControls.module.css";
-import SkyscaperControl from "./SkyscaperControl/SkyscaperControl";
+import SkyscaperControl from "./SkyscaperControls/SkyscaperControls";
 const  SkyscaperControls = ({ levels, addLevel, removeLevel }) => {
   const results = [];
   for (const level in levels) {
-    results.push(<SkyscaperControl
+    results.push(<SkyscaperControls
         key={level}
         add={addLevel}
         remove={removeLevel}
@@ -12,7 +12,7 @@ const  SkyscaperControls = ({ levels, addLevel, removeLevel }) => {
   
   
   return (
-        <div className={classes.SkyscaperControl}>
+        <div className={classes.SkyscaperControls}>
       <strong>Levels</strong>
       {results}
         </div>
