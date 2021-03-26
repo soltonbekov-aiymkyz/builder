@@ -8,6 +8,8 @@ const  SkyscaperBuilder = () => {
         livingfloor: 20,
         shopfloor: 10,
     });
+
+
     return (
         <div className={classes.SkyscaperBuilder}>
             <SkyscaperPreview levels = {levels}/>
