@@ -12,3 +12,11 @@
     font-size: 1.5rem;
     color:green;
 }
+.Control button:hover{
+    background-color: yellowgreen;
+    color: white;
+    cursor: pointer;
+}
+.Control button:focus{
+outline: white;
+}
