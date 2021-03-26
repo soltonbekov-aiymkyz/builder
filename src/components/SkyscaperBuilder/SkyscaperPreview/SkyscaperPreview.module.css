@@ -12,11 +12,30 @@
 
 
 }
-
-
 .levels {
     width: 380px;
     height: 380px;
     border-radius: 100%;
     position: relative;
   }
+/* 
+  .BunsPreview {
+    width: 100%;
+    max-width: 405px;
+    min-height: 400px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    background-color: #575550;
+    padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    justify-content: center;
+    overflow: hidden;
+}
+.ingredients {
+    width: 390px;
+    min-height: 380px;
+} */
