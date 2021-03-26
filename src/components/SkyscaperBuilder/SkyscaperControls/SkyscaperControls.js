@@ -1,5 +1,4 @@
 
-import { forwardRef } from "react";
 import classes from "./SkyscaperControls.module.css";
 
 const SkyscaperControls = ({levels}) => {
