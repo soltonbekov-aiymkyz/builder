@@ -5,8 +5,7 @@ const SkyscaperLevel = ({ type }) => {
       Restaurantfloor: { backgroundColor: `red`, width: "35px", height: "35px" },
       Livingfloor: { backgroundColor: `blue`, width: "35px", height: "35px" },
       Shopfloor: { backgroundColor: `green`, width: "35px", height: "35px" },
-    };
-  
+    }
     function getPosition(levelWidth) {
       const skyscaperDiameter = 380;
       const skyscaperRadius = skyscaperDiameter / 2;
@@ -28,23 +27,14 @@ const SkyscaperLevel = ({ type }) => {
           }
         : getPosition(levelWidth);
     }
-  
     // Get random position for this ingredient.
       const position = getPosition(types[type].width);
       types[type].top = position.top + "px";
       types[type].left = position.left + "px";
     // Get random rotation for this ingredient.
       types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
-  
     return <div className={classes.SkyscaperLevel} style={types[type]}></div>;
   };
-  
-
-
-
-
-
-
 // const  SkyscaperLevel = ({type}) => {
 // const types ={
 //     restaurantfloor: {backgroundColor:red,width:"35px",height:"35px" },
