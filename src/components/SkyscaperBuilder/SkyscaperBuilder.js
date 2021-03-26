@@ -7,13 +7,11 @@ const  SkyscaperBuilder = () => {
         restaurantfloor: 10,
         livingfloor: 20,
         shopfloor: 10,
-    })
-
+    });
     return (
         <div className={classes.SkyscaperBuilder}>
             <SkyscaperPreview levels = {levels}/>
             <SkyscaperControls  levels = {levels}    />
-    
         </div>
     )
 }

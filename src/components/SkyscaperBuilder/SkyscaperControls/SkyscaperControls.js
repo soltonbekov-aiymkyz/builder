@@ -1,6 +1,5 @@
 
 import classes from "./SkyscaperControl/SkyscaperControl";
-
 import classes from "./SkyscaperControls.module.css";
 const SkyscaperControls = ({levels}) => {
   const result =[];

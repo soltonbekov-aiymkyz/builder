@@ -1,7 +1,6 @@
 
 
 import classes from "./SkyscaperControl.module.css";
-
 const SkyscaperControl = ({ type }) => {
     return ( 
         <div className = {classes.BunsControl}>
