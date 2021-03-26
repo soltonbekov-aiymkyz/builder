@@ -1,13 +1,15 @@
-import SkyscaperControl from "./BunsControl/BunsControl";
-import classes from "./SkyscaperControls.module.css";
-const SkyscaperControls = ({ levels }) => {
-    const result = [];
-    for (const level in levels) {
-        result.push(<SkyscaperControl />);
-    }
+
+
+import classes from "./SkyscaperControl.module.css";
+
+const SkyscaperControl = ({ type }) => {
     return ( 
-        <div className = {classes.SkyscaperControls}>{result}</div>
+        <div className = {classes.BunsControl}>
+            <button className = {classes.ControlA}>-</button>
+            {type}
+            <button className = {classes.ControlB}>+</button>
+        </div>
     );
 }
  
-export default SkyscaperControls;
+export default SkyscaperControl;
