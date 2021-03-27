@@ -4,8 +4,9 @@ const  SkyscaperPreview = ({levels}) => {
     const result = [];
 for (const level in levels){
     for (let i=0; i<levels[level]; i++){
-    result.push(<SkyscaperLevel /*key={level + i} */ type={level}/>)
-}}
+    result.push(<SkyscaperLevel type={level}/>)
+}
+}
 return ( 
     <div className = {classes.SkyscaperPreview}>
         <div className={classes.levels}>
@@ -15,3 +16,8 @@ return (
 );}
 export default SkyscaperPreview;
  
+
+
+
+
+
