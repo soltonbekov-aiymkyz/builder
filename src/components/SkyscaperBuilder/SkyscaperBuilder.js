@@ -1,12 +1,16 @@
+import React from "react";
 import classes from "./SkyscaperBuilder.module.css";
 import SkyscaperPreview from "./SkyscaperPreview/SkyscaperPreview";
 import SkyscaperControls from "./SkyscaperControls/SkyscaperControls";
 import  { useState } from "react";
 const  SkyscaperBuilder = () => {
     const [levels, setLevels]= useStale({
-        restaurantfloor: 10,
-        livingfloor: 20,
-        shopfloor: 10,
+        floor1: 0,
+        floor2: 0,
+        floor3: 0,
+        floor4: 0,
+        floor5: 0,
+        floor5: 0,
     });
     function addLevel(type){
         const newlevels={...levels};
@@ -14,18 +18,25 @@ const  SkyscaperBuilder = () => {
         setLevels(newlevels);
     }
     function removeLevel(type){
-        const newlevels={...levels};
-        newlevels[type]--;
-        setLevels(newlevels);
+        if (levels[type]) {
+            const newLevels = { ...levels };
+          newLevels[type]--;
+          setLevels(newLevels);
+          }
     }
     return (
         <div className={classes.SkyscaperBuilder}>
             <SkyscaperPreview levels = {levels}/>
-            <SkyscaperControls  levels = {levels}    
+            <SkyscaperControls 
+             levels = {levels}    
             addLevel={addLevel}
-            removeLevel={removeLevel}/>
+            removeLevel={removeLevel}
+            />
         </div>
     )
-}
-export default SkyscaperBuilder;
+};
+export default React.memo(SkyscaperBuilder);
 
+
+
+  
