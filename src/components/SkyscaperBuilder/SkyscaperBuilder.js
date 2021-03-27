@@ -2,7 +2,6 @@ import React from "react";
 import classes from "./SkyscaperBuilder.module.css";
 import SkyscaperPreview from "./SkyscaperPreview/SkyscaperPreview";
 import SkyscaperControls from "./SkyscaperControls/SkyscaperControls";
-import  { useState } from "react";
 import {useState} from "react"
 
 const  SkyscaperBuilder = () => {
