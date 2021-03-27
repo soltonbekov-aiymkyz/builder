@@ -26,7 +26,7 @@ import classes from "./SkyscaperControls.module.css";
 
 const SkyscaperControls = ({levels}) => {
   const results = [];
-  for (const level in leves) {
+  for (const level in levels) {
    results.push(computeHeadingLevel);
     }
  
