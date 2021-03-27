@@ -8,12 +8,22 @@ const  SkyscaperBuilder = () => {
         livingfloor: 20,
         shopfloor: 10,
     });
-
-
+    function addLevel(type){
+        const newlevels={...levels};
+        newlevels[type]++;
+        setLevels(newlevels);
+    }
+    function removeLevel(type){
+        const newlevels={...levels};
+        newlevels[type]--;
+        setLevels(newlevels);
+    }
     return (
         <div className={classes.SkyscaperBuilder}>
             <SkyscaperPreview levels = {levels}/>
-            <SkyscaperControls  levels = {levels}    />
+            <SkyscaperControls  levels = {levels}    
+            addLevel={addLevel}
+            removeLevel={removeLevel}/>
         </div>
     )
 }
