@@ -6,8 +6,8 @@ import {useState} from "react"
 
 const  SkyscaperBuilder = () => {
     const [levels, setLevels]= useState({
-        floor1: 12,
-        floor2: 10,
+        floor1: 0,
+        floor2: 0,
         floor3: 0,
         floor4: 0,
         floor5: 0,
