@@ -34,4 +34,4 @@ const BunsControl = ({ type, addIngredient, removeIngredient }) => {
     );
 }
  
-export default BunsControl;
+export default SkyscaperControl;
