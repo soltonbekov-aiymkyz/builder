@@ -1,22 +1,22 @@
 .SkyscaperLevel{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 25px;
 }
-.SkyscaperControl button{
-    width: 2rem;
-    height: 2rem;
-    border-radius: 100%;
-    border: none;
-    font-weight: bold;
-    font-size: 1.5rem;
-    color:green;
+.ControlButton {
+    border-radius: 50%;
+    border: 0px;
+    font-size: 25px;
+    color: #b709ce;
+    width: 30px;
+    height: 30px;
 }
-.Control button:hover{
-    background-color: yellowgreen;
+.ControlButton:hover {
     color: white;
-    cursor: pointer;
+    background-color: #b709ce;
+    box-shadow: 0px 0px 15px black;
 }
-.Control button:focus{
-outline: white;
+.BunsControl div {
+    box-shadow: 0 0 15px black;
 }
