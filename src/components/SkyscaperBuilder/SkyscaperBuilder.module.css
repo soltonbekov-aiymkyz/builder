@@ -1,14 +1,6 @@
 .SkyscaperBuilder{
-    flex: 0 0 250px ;
-    padding: 1rem;
-    background-color: plum;
-    color:white;
- }
- /*
-.BunsBuilder {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-
-} */
+  flex-wrap: wrap;
+  margin-top: 2rem;
+ }
