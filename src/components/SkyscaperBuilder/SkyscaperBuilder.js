@@ -3,6 +3,8 @@ import classes from "./SkyscaperBuilder.module.css";
 import SkyscaperPreview from "./SkyscaperPreview/SkyscaperPreview";
 import SkyscaperControls from "./SkyscaperControls/SkyscaperControls";
 import  { useState } from "react";
+import {useState} from "react"
+
 const  SkyscaperBuilder = () => {
     const [levels, setLevels]= useStale({
         floor1: 0,
