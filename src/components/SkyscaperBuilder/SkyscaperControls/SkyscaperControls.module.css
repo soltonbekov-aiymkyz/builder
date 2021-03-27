@@ -1,14 +1,4 @@
 .SkyscaperControls{
-    flex: 0 0 250px;
-    flex-wrap: wrap;
-    
-    background-color: pink;
-   
-    padding: 1rem;
-    color:white;
-}
-/* 
-.BunsControls {
     width: 300px;
     height: 400px;
     padding: 1rem;
@@ -16,4 +6,4 @@
     background-color: #b709ce;
     color: white;
     border-radius: 30px;
-} */
+}
