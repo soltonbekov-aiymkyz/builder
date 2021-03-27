@@ -5,7 +5,7 @@ import SkyscaperControls from "./SkyscaperControls/SkyscaperControls";
 import {useState} from "react"
 
 const  SkyscaperBuilder = () => {
-    const [levels, setLevels]= useStale({
+    const [levels, setLevels]= useState({
         floor1: 0,
         floor2: 0,
         floor3: 0,
