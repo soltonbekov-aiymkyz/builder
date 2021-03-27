@@ -24,14 +24,14 @@ export default SkyscaperControl;
 
 
 
-const BunsControl = ({ type, addIngredient, removeIngredient }) => {
-    return ( 
-        <div className = {classes.BunsControl}>
-            <button className = {classes.ControlButton} onClick = {() => removeIngredient(type)}>-</button>
-            <BunsIngredient type = {type} />
-            <button className = {classes.ControlButton} onClick = {() => addIngredient(type)}>+</button>
-        </div>
-    );
-}
+// const BunsControl = ({ type, addIngredient, removeIngredient }) => {
+//     return ( 
+//         <div className = {classes.BunsControl}>
+//             <button className = {classes.ControlButton} onClick = {() => removeIngredient(type)}>-</button>
+//             <BunsIngredient type = {type} />
+//             <button className = {classes.ControlButton} onClick = {() => addIngredient(type)}>+</button>
+//         </div>
+//     );
+// }
  
-export default SkyscaperControl;
+// export default SkyscaperControl;
