@@ -2,7 +2,7 @@
 import SkyscaperControl from "./SkyscaperControl/SkyscaperControl";
 import classes from "./SkyscaperControls.module.css";
 const SkyscaperControls = ({ levels, addLevel, removeLevel }) => {
-  const result = [];
+  const results = [];
   for (const level in levels) {
     result.push(
       <SkyscaperControl
