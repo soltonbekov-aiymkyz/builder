@@ -38,6 +38,3 @@ const  SkyscaperBuilder = () => {
 };
 export default React.memo(SkyscaperBuilder);
 
-
-
-  
