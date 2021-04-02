@@ -1,5 +1,5 @@
 .SkyscaperControls{
-    /* width: 300px;
+  /* width: 300px;
     height: 400px;
     padding: 1rem;
 
@@ -18,7 +18,7 @@
      width: 300px;
      height: 400px;
      padding: 1rem;
-  
+     border: 10px dotted palevioletred;
      background-color: #ecc1e2;
      color: white;
      border-radius: 30px;
