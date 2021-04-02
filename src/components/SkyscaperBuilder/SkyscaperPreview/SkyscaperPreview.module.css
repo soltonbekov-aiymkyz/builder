@@ -29,15 +29,16 @@
     margin-right: 1rem;
     margin-bottom: 1rem;
     border-radius: 20px;
-    background-color: #575550;
+    background-color: #9bedf3;
     padding: 10px;
 
     display: flex;
     flex-direction: column;
     align-content: flex-start;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
-    
+
 }
 .levels {
     text-align: center;
