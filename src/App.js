@@ -7,14 +7,13 @@ function App() {
   return (
     <div className="App">
      <Layout>
-       <h1>SDyscaper builder by Soltonbekova Aiym</h1>
+       <h1>Skyscaper builder by Soltonbekova Aiym</h1>
       <SkyscaperBuilder />
      </Layout>
     </div>
   );
 }
 export default App;
-
 // import "./App.css";
 // import BunsBuilder from "./components/BunsBuilder/BunsBuilder";
 // import Layout from "./components/Layout/Layout";
