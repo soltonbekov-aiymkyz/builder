@@ -1,21 +1,24 @@
 .SkyscaperPreview{
-     width: 100%;
-     max-width: 405px;
-     min-height: 400px;
-     display: flex;
-    justify-content: center;
-    padding: 10px;
     background-color: lightcyan;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
+   margin: 0 auto;
+   margin-bottom: 20px;
+   max-width: 405px;
+   min-height: 400px;
    border-radius: 20px;
    overflow: hidden;
    flex-direction: column;
    align-items: center;
+   padding-top: 50px;
+   padding-bottom: 10px;
+   border-radius: 30px;
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center; 
+   overflow: hidden;
 }
 .levels {
     width: 390px;
    min-height: 380px;
   }
 
-  

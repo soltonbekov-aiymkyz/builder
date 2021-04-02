@@ -10,10 +10,10 @@
      display:flex ;
      align-items: center;
      flex-direction: column;
-     border: 5px dotted palevioletred;
-  
-
-
+     border: 10px dotted palevioletred;
+    
+     padding-top: 10px;
+     margin-top: 3rem;
 
 }
 
