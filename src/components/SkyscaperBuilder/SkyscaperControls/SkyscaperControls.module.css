@@ -1,11 +1,8 @@
 .SkyscaperControls{
     width: 300px;
-    line-height: 40px;
+    height: 400px;
     padding: 1rem;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
+
     background-color: #f6d2d9 ;
     color: white;
     border-radius: 30px;
