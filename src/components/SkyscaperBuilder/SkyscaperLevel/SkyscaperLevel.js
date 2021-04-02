@@ -1,8 +1,11 @@
 
 import classes from "./SkyscaperLevel.module.css";
+//import flowershopp01 from "../../../images/flowershopp01.png";
 const SkyscaperLevel = ({ type }) => {
     const types = {
-      floor1: { backgroundColor: `red`, width: "50px", height: "50px", display: "inline-block"},
+    //  floor1: { backgroundColor: `url(${flowershopp01})`, width: "50px", height: "50px", },
+    
+     floor1: { backgroundColor: `red`, width: "50px", height: "50px",display: "inline-block" },
       floor2: { backgroundColor: `blue`, width: "50px", height: "50px",display: "inline-block" },
       floor3: { backgroundColor: `green`, width: "50px", height: "50px",display: "inline-block" },
       floor4: { backgroundColor: `yellow`, width: "50px", height: "50px",display: "inline-block"},
