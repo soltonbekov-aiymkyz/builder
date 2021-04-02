@@ -6,6 +6,15 @@
     background-color: #f6d2d9 ;
     color: white;
     border-radius: 30px;
+
+     display:flex ;
+     align-items: center;
+     flex-direction: column;
+     border: 1px dashed palevioletred;
+  
+
+
+
 }
 
 
