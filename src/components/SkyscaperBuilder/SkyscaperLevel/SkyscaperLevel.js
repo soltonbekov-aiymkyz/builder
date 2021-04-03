@@ -30,9 +30,9 @@ import floor5 from "../../../Images/plants.png"
 
 const SkyscaperLevel =({type}) => {
     const types = {
-        floor1 : {backgroundImage : `url(${floor1})` , width:"170px", height:"80px",  backgroundSize: "Cover",},
-        floor2 : {backgroundImage : `url(${floor2})` , width:"170px", height:"100px",  backgroundSize: "Cover",},
-        floor3 : {backgroundImage : `url(${floor3})` , width:"170px", height:"120px",  backgroundSize: "Cover",},
+        floor1 : {backgroundImage : `url(${floor1})` , width:"170px", height:"80px",  backgroundSize: "Cover"},
+        floor2 : {backgroundImage : `url(${floor2})` , width:"170px", height:"100px",  backgroundSize: "Cover"},
+        floor3 : {backgroundImage : `url(${floor3})` , width:"170px", height:"120px",  backgroundSize: "Cover"},
 
         floor4 : {
           backgroundImage : `url(${floor4})` ,
@@ -43,7 +43,7 @@ const SkyscaperLevel =({type}) => {
 
         },
 
-        floor5 : {backgroundImage : `url(${floor5})` , width:"170px", height:"120px",  backgroundSize: "Cover",},
+        floor5 : {backgroundImage : `url(${floor5})` , width:"170px", height:"120px",  backgroundSize: "Cover"},
 
      
     }
