@@ -25,6 +25,7 @@ const  SkyscaperBuilder = () => {
           setLevels(newLevels);
           }
     }
+
     return (
         <div className={classes.SkyscaperBuilder}>
             <SkyscaperPreview levels = {levels}/>
