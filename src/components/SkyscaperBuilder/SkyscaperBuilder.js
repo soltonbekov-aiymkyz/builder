@@ -6,21 +6,42 @@ import axios from "axios"
 import { useEffect, useState} from "react"
 const  SkyscaperBuilder = () => {
     const prices ={ 
-   floor1: 120000,
-   floor2:50000,
-   floor3:300,
-   floor4:41234,
-   floor5:5234,
+   floor1: 0,
+   floor2:10000,
+   floor3:30000,
+   floor4:11234,
+   floor5:15234,
     }
     const [levels, setLevels]= useState({
     });
     const [price, setPrice] = useState(150);
+
+
+
         useEffect (function () {
             axios.get('https://builder-6b86c-default-rtdb.firebaseio.com/level.json')
                 .then(response=>{
                 setLevels({...response.data});
+                setPrice({...response.data});
               });
           }, []);
+
+
+
+        //   useEffect (function () {
+        //     axios.get('https://builder-6b86c-default-rtdb.firebaseio.com//level.json')
+        //         .then(response=>{
+        //         setLevels({...response.data});
+        //       });
+        //   }, []);
+
+
+
+
+
+
+
+
     function addLevel(type){
         const newlevels={...levels};
         newlevels[type]++;
@@ -44,9 +65,16 @@ const  SkyscaperBuilder = () => {
             addLevel={addLevel}
             removeLevel={removeLevel}
             />
-
         </div>
     )
 };
 export default SkyscaperBuilder;
+
+
+
+
+
+
+
+
 
