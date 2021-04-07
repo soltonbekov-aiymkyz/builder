@@ -7,10 +7,10 @@ import { useEffect, useState} from "react"
 const  SkyscaperBuilder = () => {
     const prices ={ 
    floor1: 0,
-   floor2:10000,
-   floor3:30000,
-   floor4:11234,
-   floor5:15234,
+   floor2:0,
+   floor3:0,
+   floor4:0,
+   floor5:0,
     }
     const [levels, setLevels]= useState({
     });
@@ -19,12 +19,27 @@ const  SkyscaperBuilder = () => {
 
 
         useEffect (function () {
-            axios.get('https://builder-6b86c-default-rtdb.firebaseio.com/level.json')
+            axios.get('https://builder-6b86c-default-rtdb.firebaseio.com/default.json')
                 .then(response=>{
-                setLevels({...response.data});
-                setPrice({...response.data});
+                setLevels({response.data.levels});
+                setPrice({response.data.price});
               });
           }, []);
+
+
+
+        
+
+        //   useEffect ( ()
+        //   => { axios
+        //     .get('https://builder-6b86c-default-rtdb.firebaseio.com/default.json')
+        //         .then(response=>{
+        //         setLevels({...response.data});
+        //         setPrice({...response.data});
+        //       });
+        //   }, []);
+
+
 
 
 
