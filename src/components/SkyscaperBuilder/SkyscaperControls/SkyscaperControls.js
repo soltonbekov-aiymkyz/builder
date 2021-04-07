@@ -3,7 +3,13 @@ import SkyscaperControl from "./SkyscaperControl/SkyscaperControl";
 import classes from "./SkyscaperControls.module.css";
 const SkyscaperControls = ({ levels, addLevel, removeLevel }) => {
   const results = [];
+  
+  let total = 0;
+
   for (const level in levels) {
+ 
+  total+= levels[level];
+
     results.push(
       <SkyscaperControl
         type={level}
@@ -12,33 +18,22 @@ const SkyscaperControls = ({ levels, addLevel, removeLevel }) => {
       />
     )
   }
-  return (
-    <div className={classes.SkyscaperControls}>{results}</div>
-  );
+
+
+//   return (
+//     <div className={classes.SkyscaperControls}>  {results}</div>
+//   );
+// };
+
+
+return (
+  <div className={classes.SkyscaperControls}>  
+  <strong>Levels</strong>
+  {results}
+  <button disabled={!total}>Order</button>
+  </div>
+);
 };
 export default SkyscaperControls;
-
-
-
-
-
-// import classes from "./SkyscaperControls.module.css";
-
-// const SkyscaperControls = ({levels}) => {
-//   const results = [];
-//   for (const level in levels) {
-//    results.push(level);
-//     }
-
-//     return (
-//       <div className={classes.SkyscaperControls}>
-//        {results}
-//       </div>
-//     );
-//   }
-
-//   export default SkyscaperControls;
-
-
 
 
