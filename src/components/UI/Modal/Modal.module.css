@@ -1,0 +1,19 @@
+.content {
+    position: fixed;
+    top: 15%;
+    left: 30%;
+    width: 40%;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    
+    transition: transform .3s ease-out;
+  }
+  
+  @media (max-width: 800px) {
+    .content {
+      width: 80%;
+      left: 10%;
+    }
+  }
+  
