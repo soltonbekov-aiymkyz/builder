@@ -4,7 +4,7 @@ const  SkyscaperPreview = ({levels,price}) => {
     const result = [];
 for (const level in levels){
     for (let i=0; i<levels[level]; i++){
-    result.push(<SkyscaperLevel /* key={ingredient + i}*/ type={level}/>)
+    result.push(<SkyscaperLevel  type={level}/>)
 }
 }
 return ( 

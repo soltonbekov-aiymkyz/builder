@@ -19,8 +19,13 @@
 import floor1 from "../../../Images/livingFloor.jpg"
 
 import floor2 from "../../../Images/bookstoree1.png"
-
 import floor3 from "../../../Images/changingroom.png"
+
+// import floor2 from "../../../Images/lh.jpg"
+// import floor3 from "../../../Images/nhomeee..jpg"
+
+
+
 
 import floor4 from "../../../Images/flower.jpg"
 
@@ -33,6 +38,15 @@ const SkyscaperLevel =({type}) => {
         floor1 : {backgroundImage : `url(${floor1})` , width:"170px", height:"80px",  backgroundSize: "Cover"},
         floor2 : {backgroundImage : `url(${floor2})` , width:"170px", height:"100px",  backgroundSize: "Cover"},
         floor3 : {backgroundImage : `url(${floor3})` , width:"170px", height:"120px",  backgroundSize: "Cover"},
+
+
+      //  floor2 : {backgroundImage : `url(${floor2})` , width:"200px", height:"100px",  backgroundSize: "Cover"},
+      //   floor3 : {backgroundImage : `url(${floor3})` , width:"200px", height:"120px",  backgroundSize: "Cover"},
+
+
+
+
+
 
         floor4 : {
           backgroundImage : `url(${floor4})` ,
