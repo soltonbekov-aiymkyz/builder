@@ -4,7 +4,7 @@ const  SkyscaperPreview = ({levels,price}) => {
     const result = [];
 for (const level in levels){
     for (let i=0; i<levels[level]; i++){
-    result.push(<SkyscaperLevel  type={level}/>)
+    result.push(<SkyscaperLevel  /* key={level + i}*/ type={level}/>)
 }
 }
 return ( 
@@ -14,7 +14,7 @@ return (
             className ={classes.levels}/>
             {result}
         </div>
-    <div className={classes.price}>{price}som</div>
+    <div className={classes.price}>{price.toFixed(1)}som</div>
     </div>
 );}
 export default SkyscaperPreview;

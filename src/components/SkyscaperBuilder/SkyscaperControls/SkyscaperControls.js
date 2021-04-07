@@ -17,7 +17,7 @@ const SkyscaperControls = ({
         type={level}
         addLevel={addLevel}
         removeLevel={removeLevel}
-        //  key={level}
+        /* key={level}*/
              count={level[level]}
       />
     )
