@@ -3,6 +3,9 @@ import classes from "./SkyscaperBuilder.module.css";
 import SkyscaperPreview from "./SkyscaperPreview/SkyscaperPreview";
 import SkyscaperControls from "./SkyscaperControls/SkyscaperControls";
 import axios from "axios"
+
+import Modal from "../UI/Modal/Modal";
+
 import { useEffect, useState} from "react"
 const  SkyscaperBuilder = () => {
     const prices ={ 
@@ -15,6 +18,7 @@ const  SkyscaperBuilder = () => {
     const [levels, setLevels]= useState({
     });
     const [price, setPrice] = useState(150);
+    
         useEffect (function () {
             axios.get('https://builder-6b86c-default-rtdb.firebaseio.com/default.json')
                 .then(response=>{
@@ -44,7 +48,9 @@ const  SkyscaperBuilder = () => {
              levels = {levels}    
             addLevel={addLevel}
             removeLevel={removeLevel}
+           
             />
+             <Modal>Hello</Modal>
         </div>
     )
 };
