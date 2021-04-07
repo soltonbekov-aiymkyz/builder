@@ -1,39 +1,18 @@
 
- import Button from "../../../UI/Button/Button";
+import Button from "../../../UI/Button/Button";
 import SkyscaperLevel from "../../SkyscaperLevel/SkyscaperLevel";
 import classes from "./SkyscaperControl.module.css";
-const SkyscaperControl = ({ type,addLevel,removeLevel }) => {
+
+const SkyscaperControl = ({ type,addLevel,removeLevel,count }) => {
     return ( 
        <div className = {classes.SkyscaperControl}>
-            <button    className = {classes.ControlButton}  onClick={()=>addLevel(type)}>+</button>
+            <button   className = {classes.ControlButton} onClick={()=>addLevel(type)}>+</button>
             <div className={classes.level}>
             <SkyscaperLevel type={type}  fixed />
             </div>
-            <button className = {classes.ControlButton}  onClick={()=>removeLevel(type)}  >-</button>
+            <button  className = {classes.ControlButton}  onClick={()=>removeLevel(type)}   disabled={!count}  >-</button>
         </div>
     );
 }
 export default SkyscaperControl;
-
-
-
-
-
-// import Button from "../../../UI/Button/Button";
-// import PizzaIngredient from "../../PizzaIngredient/PizzaIngredient";
-// import classes from "./PizzaControl.module.css";
-
-// const PizzaControl = ({ type, add, remove }) => {
-//   return (
-//     <div className={classes.PizzaControl}>
-//       <Button onClick={() => add(type)}>+</Button>
-//       <div className={classes.ingredient}>
-//         <PizzaIngredient type={type} fixed />
-//       </div>
-//       <Button onClick={() => remove(type)}>-</Button>
-//     </div>
-//   );
-// }
-
-// export default PizzaControl;
 

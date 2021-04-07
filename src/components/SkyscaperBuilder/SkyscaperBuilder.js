@@ -5,8 +5,6 @@ import SkyscaperControls from "./SkyscaperControls/SkyscaperControls";
 import axios from "axios"
 import Modal from "../UI/Modal/Modal";
 import { useEffect, useState} from "react"
-
-
 const  SkyscaperBuilder = () => {
     const prices ={ 
    floor1: 12000,
@@ -15,12 +13,9 @@ const  SkyscaperBuilder = () => {
    floor4:34567,
    floor5:34567,
     }
-    const [levels, setLevels]= useState({
-    });
+    const [levels, setLevels]= useState({ });
     const [price, setPrice] = useState(150);
-
     const [ordering, setOrdering] = useState(false);
-
         useEffect ( 
             () => axios
             .get('https://builder-6b86c-default-rtdb.firebaseio.com/default.json')
@@ -43,20 +38,14 @@ const  SkyscaperBuilder = () => {
           setPrice(price - prices[type])
           }
     }
-
-    
   function startOrdering() {
     setOrdering(true);
   }
-
   function stopOrdering() {
     setOrdering(false);
   }
-
-
     return (
-        <div className={classes.SkyscaperBuilder}>
-          
+        <div className={classes.SkyscaperBuilder}>  
             <SkyscaperPreview  levels={levels}
              price={price} />
             <SkyscaperControls 
@@ -64,8 +53,7 @@ const  SkyscaperBuilder = () => {
             addLevel={addLevel}
             removeLevel={removeLevel}
             startOrdering={startOrdering}
-            />
-                
+            />        
       <Modal
         show={ordering}
         cancel={stopOrdering}>Hello</Modal>
