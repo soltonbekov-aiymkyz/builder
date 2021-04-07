@@ -15,48 +15,13 @@ const  SkyscaperBuilder = () => {
     const [levels, setLevels]= useState({
     });
     const [price, setPrice] = useState(150);
-
-
-
         useEffect (function () {
             axios.get('https://builder-6b86c-default-rtdb.firebaseio.com/default.json')
                 .then(response=>{
-                setLevels({response.data.levels});
-                setPrice({response.data.price});
+                setLevels(response.data.levels);
+                setPrice(response.data.price);
               });
           }, []);
-
-
-
-        
-
-        //   useEffect ( ()
-        //   => { axios
-        //     .get('https://builder-6b86c-default-rtdb.firebaseio.com/default.json')
-        //         .then(response=>{
-        //         setLevels({...response.data});
-        //         setPrice({...response.data});
-        //       });
-        //   }, []);
-
-
-
-
-
-        //   useEffect (function () {
-        //     axios.get('https://builder-6b86c-default-rtdb.firebaseio.com//level.json')
-        //         .then(response=>{
-        //         setLevels({...response.data});
-        //       });
-        //   }, []);
-
-
-
-
-
-
-
-
     function addLevel(type){
         const newlevels={...levels};
         newlevels[type]++;
