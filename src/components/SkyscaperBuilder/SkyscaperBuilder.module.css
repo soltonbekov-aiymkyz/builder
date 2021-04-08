@@ -1,9 +1,4 @@
 .SkyscaperBuilder{
-
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-   */
    display: flex;
    justify-content: center;
  flex-wrap: wrap;
