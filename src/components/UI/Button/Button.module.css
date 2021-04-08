@@ -3,14 +3,14 @@
     margin: 0 .5rem;
     padding: 0 1rem;
     border-radius: 1rem;
-    background-color: rgb(255, 152, 133);
+    background-color: rgb(109, 166, 199);
     color: white;
     font-weight: bold;
     font-size: 1.5rem;
     cursor: pointer;
   }
   .Button:not(:disabled):hover {
-    background-color: rgb(172, 26, 0);
+    background-color: rgb(164, 218, 240);
   }
   .Button:focus {
     outline: none;
@@ -18,7 +18,6 @@
   .Button:disabled {
     opacity: .5;
   } 
-
   .green {
     background-color: rgb(137, 255, 133);
   }
@@ -26,35 +25,3 @@
     background-color: rgb(49, 172, 0);
   }
 
-
-
-
-/* 
-
-  .Button {
-    border: 0;
-    margin: 0 .5rem;
-    padding: 0 1rem;
-    border-radius: 1rem;
-    background-color: rgb(255, 152, 133);
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  .Button:not(:disabled):hover {
-    background-color: rgb(172, 26, 0);
-  }
-  .Button:focus {
-    outline: none;
-  }
-  .Button:disabled {
-    opacity: .5;
-  }
-  
-  .green {
-    background-color: rgb(137, 255, 133);
-  }
-  .green:not(:disabled):hover {
-    background-color: rgb(49, 172, 0);
-  } */
