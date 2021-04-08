@@ -17,12 +17,11 @@ const SkyscaperControls = ({
         type={level}
         addLevel={addLevel}
         removeLevel={removeLevel}
-        /* key={level}*/
+        key={level}
              count={level[level]}
       />
     )
   }
-
 return (
   <div className={classes.SkyscaperControls}>  
   <strong>Levels</strong>
@@ -32,5 +31,6 @@ return (
 );
 };
 export default SkyscaperControls;
+
 
 
