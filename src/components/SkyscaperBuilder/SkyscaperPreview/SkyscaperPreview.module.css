@@ -19,14 +19,10 @@
    overflow: hidden;
 
 }
-
-
 .levels {
   display: flex;
   flex-direction: column;
 }
-
-
 .price {
   font-size: 1.5rem;
   color: white;
@@ -34,37 +30,3 @@
   border-radius: 1rem;
   padding: 0 1rem;
 }
-/* 
-.PizzaPreview {
-  flex: 0 0 400px;
-
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-.pizza {
-  width: 400px;
-  height: 400px;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 100%;
-  background-color: #fcc067;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.ingredients {
-  width: 380px;
-  height: 380px;
-  border-radius: 100%;
-  position: relative;
-}
-.price {
-  font-size: 1.5rem;
-  color: white;
-  background-color: tomato;
-  border-radius: 1rem;
-  padding: 0 1rem;
-} */
