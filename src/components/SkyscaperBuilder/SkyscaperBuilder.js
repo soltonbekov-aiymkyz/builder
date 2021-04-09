@@ -6,6 +6,9 @@ import axios from "axios"
 import Modal from "../UI/Modal/Modal";
 import { useEffect, useState} from "react"
 import OrderSummary from "./OrderSummary/OrderSummary";
+import Button from "../UI/Button/Button"
+
+
 const  SkyscaperBuilder = () => {
     const prices ={ 
    floor1: 12000,
@@ -39,13 +42,18 @@ const  SkyscaperBuilder = () => {
           setPrice(price - prices[type])
           }
     }
+
   function startOrdering() {
     setOrdering(true);
   }
   function stopOrdering() {
     setOrdering(false);
   }
-    return (
+
+  function finishOrdering() {
+    setOrdering(false);
+  }
+  return (
         <div className={classes.SkyscaperBuilder}>  
             <SkyscaperPreview  levels={levels}
              price={price} />
@@ -62,7 +70,12 @@ const  SkyscaperBuilder = () => {
             levels={levels}
             price={price}
             />
+               <Button onClick={finishOrdering} green>Checkout</Button>
+            <Button onClick={stopOrdering}>Cancel</Button>
+
         </Modal>
+
+
         </div>
     )
 };
