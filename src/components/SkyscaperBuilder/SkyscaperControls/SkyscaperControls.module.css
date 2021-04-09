@@ -1,13 +1,11 @@
 .SkyscaperControls{
- 
      width: 300px;
-     height: 400px;
+     height:400px;
      padding: 1rem;
      border: 10px dotted rgb(224, 201, 209);
      background-color:#a0849d ;
      color: white;
      border-radius: 30px;
-
 }
 
 
