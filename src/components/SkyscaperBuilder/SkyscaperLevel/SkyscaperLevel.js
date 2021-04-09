@@ -1,4 +1,4 @@
-
+import React from "react"
 import floor1 from "../../../Images/livingFloor.jpg"
 import floor2 from "../../../Images/bookstoree1.png"
 import floor3 from "../../../Images/changingroom.png"
@@ -19,7 +19,7 @@ const SkyscaperLevel =({type}) => {
         floor5 : {backgroundImage : `url(${floor5})` , width:"170px", height:"120px",  backgroundSize: "Cover"},
     }
     return ( 
-        <div style={types[type]}></div>
+        <div    style={types[type]}></div>
      );
 }
  

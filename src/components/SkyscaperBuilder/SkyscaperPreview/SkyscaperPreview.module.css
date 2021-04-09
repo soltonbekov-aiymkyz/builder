@@ -26,7 +26,7 @@
 .price {
   font-size: 1.5rem;
   color: white;
-  background-color: tomato;
+  background-color: rgb(213, 92, 224);
   border-radius: 1rem;
   padding: 0 1rem;
 }
