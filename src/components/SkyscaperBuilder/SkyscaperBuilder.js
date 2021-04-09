@@ -5,6 +5,7 @@ import SkyscaperControls from "./SkyscaperControls/SkyscaperControls";
 import axios from "axios"
 import Modal from "../UI/Modal/Modal";
 import { useEffect, useState} from "react"
+import OrderSummary from "./OrderSummary/OrderSummary";
 const  SkyscaperBuilder = () => {
     const prices ={ 
    floor1: 12000,
@@ -56,7 +57,12 @@ const  SkyscaperBuilder = () => {
             />        
       <Modal
         show={ordering}
-        cancel={stopOrdering}>Hello</Modal>
+        cancel={stopOrdering}>Hello
+        <OrderSummary
+            levels={levels}
+            price={price}
+            />
+        </Modal>
         </div>
     )
 };
