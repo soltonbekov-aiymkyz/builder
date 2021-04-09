@@ -18,9 +18,7 @@ const SkyscaperBuilder = () => {
   const [levels, setLevels] = useState({});
   const [price, setPrice] = useState(150);
   const [ordering, setOrdering] = useState(false);
-
   useEffect(loadDefaults, []);
-
   function loadDefaults() {
     axios
       .get('https://builder-6b86c-default-rtdb.firebaseio.com/default.json')
@@ -29,7 +27,6 @@ const SkyscaperBuilder = () => {
         setLevels(response.data.levels);
       });
   }
-
   function addLevel(type) {
     const newlevels = { ...levels };
     newlevels[type]++;
@@ -44,15 +41,12 @@ const SkyscaperBuilder = () => {
       setPrice(price - prices[type])
     }
   }
-
   function startOrdering() {
     setOrdering(true);
   }
   function stopOrdering() {
     setOrdering(false);
   }
-
-
   function finishOrdering() {
     axios
       .post('https://builder-6b86c-default-rtdb.firebaseio.com/orders.json', {
@@ -86,10 +80,7 @@ const SkyscaperBuilder = () => {
         />
         <Button onClick={finishOrdering} green>Checkout</Button>
         <Button onClick={stopOrdering}>Cancel</Button>
-
       </Modal>
-
-
     </div>
   )
 };
