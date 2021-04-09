@@ -1,4 +1,4 @@
-.Toolbar{
+/* .Toolbar{
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -10,6 +10,27 @@
     left:0;
     font-size: 2rem;
 }
+  @media (max-width: 549px) {
+    .Toolbar nav {
+      display: none;
+    }
+  } */
+
+
+  .Toolbar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 0 1rem;
+  
+    font-size: 2rem;
+    color: white;
+    background-color:#d3b3b8 ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  }
+  
   @media (max-width: 549px) {
     .Toolbar nav {
       display: none;
