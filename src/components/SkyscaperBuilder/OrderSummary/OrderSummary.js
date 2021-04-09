@@ -1,5 +1,3 @@
-
-
 import classes from "./OrderSummary.module.css";
 const OrderSummary = ({ levels, price }) => {
   const labels = {
@@ -11,7 +9,6 @@ const OrderSummary = ({ levels, price }) => {
   }
   const results = Object.keys(levels)
     .map(type => <li>{labels[type]}: {levels[type]}</li>);
-
   return (
     <div className={classes.OrderSummary}>
       <h3>Order summary</h3>
@@ -22,5 +19,4 @@ const OrderSummary = ({ levels, price }) => {
     </div>
   );
 }
-
 export default OrderSummary;
