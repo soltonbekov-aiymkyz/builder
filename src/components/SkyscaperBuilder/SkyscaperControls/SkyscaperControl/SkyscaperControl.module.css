@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 25px;
+
    
 }
 .ControlButton {
@@ -25,4 +26,9 @@
     justify-content: center;
     align-items: center;
     margin: .5rem 0;
+
+
+    
+
+
   }
