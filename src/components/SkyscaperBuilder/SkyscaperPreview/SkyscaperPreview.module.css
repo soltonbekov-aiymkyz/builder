@@ -29,4 +29,15 @@
   background-color: rgb(213, 92, 224);
   border-radius: 1rem;
   padding: 0 1rem;
-}
+ }
+/* 
+.video{
+    position:absolute;
+width:100%;
+left:50%;
+top:50%;
+height:100%;
+objectFit:cover; 
+transform:translate(-50%,-50%);
+z-index:-1;
+} */
