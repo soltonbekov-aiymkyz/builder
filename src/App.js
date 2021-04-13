@@ -15,10 +15,8 @@ function App() {
   return (
     <div className="App">
      <Layout>
-       <h1>Skyscaper builder by Soltonbekova Aiym</h1>
+       <h1>Skyscaper builder </h1>
        {/* <Bounce><h1>Hello Animation Bounce</h1></Bounce> */}
-       
-
       <SkyscaperBuilder />
      </Layout>
     </div>
