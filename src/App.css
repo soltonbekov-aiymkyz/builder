@@ -14,5 +14,26 @@ body {
 */
 .App h1 {
      text-align: center; 
-    color: plum;
+    color: black;
+    font-size: 38px;
+
+
+    /* animation-name: scaleAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in; */
 } 
+/* 
+@keyframes scaleAnimation {
+    10%{
+        
+        transform: scale(.6);
+    }
+    50%{
+        transform: scale(.7);
+    }
+    100%{
+        transform: scale(.8);
+    }
+} */
