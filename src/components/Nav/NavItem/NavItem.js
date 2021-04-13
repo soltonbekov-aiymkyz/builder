@@ -1,5 +1,4 @@
 import classes from "./NavItem.module.css";
-
 const NavItem = ({ url, children, active }) => {
   return (
     <li className={classes.NavItem}>
