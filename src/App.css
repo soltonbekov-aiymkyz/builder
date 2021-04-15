@@ -17,12 +17,12 @@ body {
     color: black;
     font-size: 38px;
 
-
-    /* animation-name: scaleAnimation;
+/* 
+     animation-name: scaleAnimation;
     animation-iteration-count: infinite;
     animation-duration: 4s;
     animation-direction: alternate;
-    animation-timing-function: ease-in; */
+    animation-timing-function: ease-in;  */
 } 
 /* 
 @keyframes scaleAnimation {
@@ -36,4 +36,4 @@ body {
     100%{
         transform: scale(.8);
     }
-} */
+}  */
