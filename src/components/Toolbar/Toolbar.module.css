@@ -24,7 +24,9 @@
     top: 0;
     left: 0;
     padding: 0 1rem;
-  
+
+    height: 150px;
+
     font-size: 2rem;
     color: white;
     background-color:#d3b3b8 ;
