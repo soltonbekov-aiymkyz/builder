@@ -9,64 +9,29 @@ for (const level in levels){
     result.push(<SkyscaperLevel  key={level + i} type={level}/>)
 }
  }
-// d.n
-//if ing=10
-// d.b
 
 
-
-// const  animations = ({animations,level}) => {
-//     const result = [];
-// for (const level in levels){
-//     for (let i=0; i<levels[level=10]; i++){
-//     result.push(<SkyscaperLevel  key={level + i} type={level}/>)
-// }
-//  }
-
-
-
-
-
-
-
-// function Animation({level}) {
-//     if (level=10) {
-//       return: true;
-//     }
-//     if (level!=10) {
-//         return: false;
-//       }
-  
-//   class Page extends React.Component {
-//     constructor(props) {
-//       super(props);
-//       this.state = {showWarning: true};
-//       this.handleToggleClick = this.handleToggleClick.bind(this);
-//     }
-  
-//     handleToggleClick() {
-//       this.setState(state => ({
-//         showWarning: !state.showWarning
-//       }));
-//     }
-  
-//     render() {
-//       return (
-//         <div>
-//           <WarningBanner warn={this.state.showWarning} />
-//           <button onClick={this.handleToggleClick}>
-//             {this.state.showWarning ? 'Спрятать' : 'Показать'}
-//           </button>
-//         </div>
-//       );
-//     }
+// function loop(x) {
+//     if (x >= 10) // "x >= 10" — это условие для конца выполнения (тоже самое, что "!(x < 10)")
+//       return;
+//     // делать что-то
+//     loop(x + 1); // рекурсионный вызов
 //   }
-  
-//   ReactDOM.render(
-//     <Page />,
-//     document.getElementById('root')
-//   );
-  
+//   loop(0);
+
+
+
+//   function animation({level}) {
+//     if (level == 10) 
+//       return;
+//     animation(level + 1);
+//   }
+//   animation(0);
+
+
+
+
+
 
 return ( 
     <div className = {classes.SkyscaperPreview}>
