@@ -8,12 +8,14 @@ for (const level in levels){
     result.push(<SkyscaperLevel  key={level + i} type={level}/>)
 }
  }
+ 
 return ( 
     <div className = {classes.SkyscaperPreview}>
         <div className={classes.levels}>
             <div
             className ={classes.levels}/>
             <div className={classes.birdImage}>
+                
             </div>
             {result}
         </div>
@@ -23,4 +25,3 @@ return (
 export default SkyscaperPreview;
  
  
-
