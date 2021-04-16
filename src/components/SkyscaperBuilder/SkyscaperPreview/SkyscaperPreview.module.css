@@ -31,31 +31,33 @@
   padding: 0 1rem;
  }
 
-/* 
-
-.animation{
-  background-image: url(../../../Images/ch.png);
-  display: none;
-  
-  animation-name: animation;
+ .birdImage{
+   width: 80px;
+   height: 80px;
+   background-image: url(../../../Images/ch.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+ 
+  animation-name: bAnimation;
  animation-iteration-count: infinite;
  animation-duration: 4s;
  animation-direction: alternate;
- animation-timing-function: ease-in; 
-
-} */
-
-
-/*  
-
-@keyframes Animation {
- 10%{
+ animation-timing-function: ease-in;    
+} 
+@keyframes bAnimation{
+  from{
+      left: 100%;
+  }
+  0%{  
+      transform: rotate(250deg);    
      transform: scale(.6);
- }
- 50%{
-     transform: scale(.7);
- }
- 100%{
-     transform: scale(.8);
- }
-}    */
+  }
+ 
+  50%{
+      transform: rotate(220deg);
+  }
+  100%{
+      right: 100%; 
+     transform: scale(.10);
+  }
+}
