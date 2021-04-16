@@ -1,5 +1,4 @@
 
-import SkyscaperLevel from "../../SkyscaperLevel/SkyscaperLevel";
 import classes from "./SkyscaperControl.module.css";
 const SkyscaperControl = ({ type, addLevel, removeLevel }) => {
     const name ={
