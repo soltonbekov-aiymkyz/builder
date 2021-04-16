@@ -4,7 +4,7 @@
    margin: 0 auto;
    margin-bottom: 20px;
    min-height: 430px;
-   min-width: 500px;
+   min-width: 430px;
    padding-top: 50px;
    padding-bottom: 10px;
    border-radius: 30px;
@@ -46,7 +46,7 @@
 } */
 
 
- 
+/*  
 
 @keyframes Animation {
  10%{
@@ -58,4 +58,4 @@
  100%{
      transform: scale(.8);
  }
-}   
+}    */
