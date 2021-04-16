@@ -50,14 +50,20 @@
   }
   0%{  
       transform: rotate(250deg);    
-     transform: scale(.6);
+     transform: scale(.8);
+     left: -150;
   }
- 
   50%{
       transform: rotate(220deg);
   }
   100%{
-      right: 100%; 
-     transform: scale(.10);
+       
+     transform: scale(.13);
+     left: 100%;
   }
 }
+
+
+
+
+
