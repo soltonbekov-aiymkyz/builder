@@ -41,6 +41,7 @@ const SkyscaperBuilder = () => {
       setPrice(price - prices[type])
     }
   }
+  
   function startOrdering() {
     setOrdering(true);
   }
