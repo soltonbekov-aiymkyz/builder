@@ -1,9 +1,9 @@
- .Logo img {
+  .logo img {
     height: 3rem;
     margin:1rem;
    
 } 
-.Logo{
+.logo{
     display: flex;
     align-items: center;
-}
+} 
