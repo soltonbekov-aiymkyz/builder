@@ -7,6 +7,7 @@ for (const level in levels){
     for (let i=0; i<levels[level]; i++){
     result.push(<SkyscaperLevel  key={level + i} type={level}/>)
 }
+
  }
  
 return ( 
@@ -25,3 +26,4 @@ return (
 export default SkyscaperPreview;
  
  
+
