@@ -45,6 +45,7 @@
   animation-name: bAnimation;
  animation-iteration-count: infinite;
  animation-duration: 4s;
+
  animation-direction: alternate;
  animation-timing-function: ease-in;    
 } 
@@ -53,9 +54,10 @@
       left: 100%;
   }
   0%{  
-      transform: rotate(250deg);    
+      /* transform: rotate(250deg);    
      transform: scale(.8);
-     left: -150;
+     left: -150; */
+     transform: translate(120px, 50%);
   }
   50%{
       transform: rotate(220deg);

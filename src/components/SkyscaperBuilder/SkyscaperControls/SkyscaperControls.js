@@ -1,4 +1,5 @@
 
+
 import Button from "../../UI/Button/Button";
 import SkyscaperControl from "./SkyscaperControl/SkyscaperControl";
 import classes from "./SkyscaperControls.module.css";
@@ -31,43 +32,6 @@ return (
 );
 };
 export default SkyscaperControls;
-
-
-
-
-
-
-// import Button from "../../UI/Button/Button";
-// import SkyscaperControl from "./SkyscaperControl/SkyscaperControl";
-// import classes from "./SkyscaperControls.module.css";
-// const SkyscaperControls = ({  levels,  addLevel,   removeLevel,  startOrdering }) => {
-//   const results = [];
-//   const levels = [
-//     "floor1",
-//     "floor2",
-//     "floor3",
-//     "floor4",
-//     "floor5",
-//   ];
-//   for (const level in levels) {
-//     result.push(
-//       <SkyscaperControl
-//         key={levels[level]}
-//         type={levels[level]}
-//         addLevel={addLevel}
-//         removeLevel={removeLevel}
-//       />
-//     );
-//   }
-// return 
-//   <div className={classes.SkyscaperControls}>  
-  
-//   {result}
-//   <Button disabled={!levels.length} onClick={startOrdering} aqua>Order</Button>
-//   </div>
-// };
-// export default SkyscaperControls;
-
 
 
 
