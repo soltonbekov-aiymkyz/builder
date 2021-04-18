@@ -37,6 +37,10 @@
    background-image: url(../../../Images/ch.png);
    background-size: cover;
    background-repeat: no-repeat;
+
+   position: relative;
+  
+
  
   animation-name: bAnimation;
  animation-iteration-count: infinite;
