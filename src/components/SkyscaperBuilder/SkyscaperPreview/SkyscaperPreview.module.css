@@ -61,10 +61,29 @@
   /* z-index: inherit; */
   animation-direction: alternate;
   animation-timing-function: ease-in; 
+}
+
+
+
+
+.cloudImage{
+  width: 80px;
+  height: 80px;
+  background-image: url(../../../Images/clouds.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 900px;
+  animation-name: cAnimation;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  /* z-index: inherit; */
+  animation-direction: alternate;
+  animation-timing-function: ease-in; 
   
   
 } 
-@keyframes rAnimation{
+@keyframes cAnimation{
  from{
      left: 100%;
  }
@@ -80,23 +99,21 @@
  }
 }
 
+@keyframes rAnimation{
+ from{
+     left: 100%;
+ }
+ 0%{  
+    transform: translate(120px, 50%);
+ }
+ 50%{
+     right:100%;
+ }
+ 100%{
+   right: 100%;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ }
+}
 
 @keyframes bAnimation{
   from{
