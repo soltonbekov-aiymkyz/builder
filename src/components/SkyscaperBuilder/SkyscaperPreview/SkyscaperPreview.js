@@ -15,6 +15,7 @@ return (
              
              <div className={classes.rocketImage}></div>
              <div className={classes.birdImage}></div>
+             <div className={classes.cloudImage}></div>
             {result}
         </div>
     <div className={classes.price}>{price.toFixed(1)}som</div>
