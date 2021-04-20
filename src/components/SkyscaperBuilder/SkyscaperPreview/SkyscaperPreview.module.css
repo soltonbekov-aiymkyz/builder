@@ -56,6 +56,7 @@
   position: absolute;
   bottom: 700px;
   animation-name: rAnimation;
+  animation-iteration-count: infinite;
  
   
 } 
