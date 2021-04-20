@@ -60,7 +60,8 @@
   animation-duration: 7s;
   /* z-index: inherit; */
   animation-direction: alternate;
- 
+  animation-timing-function: ease-in; 
+  
   
 } 
 @keyframes rAnimation{
