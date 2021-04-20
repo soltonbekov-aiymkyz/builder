@@ -53,8 +53,8 @@
   background-image: url(../../../Images/shuttle.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  
-
+  position: absolute;
+ 
 
 } 
 @keyframes rAnimation{
