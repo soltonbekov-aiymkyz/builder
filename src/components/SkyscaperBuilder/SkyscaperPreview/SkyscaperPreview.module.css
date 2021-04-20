@@ -51,11 +51,9 @@
   width: 80px;
   height: 80px;
   background-image: url(../../../Images/shuttle.svg);
-
-
-
   background-size: cover;
- 
+  background-repeat: no-repeat;
+  
 
 
 } 
