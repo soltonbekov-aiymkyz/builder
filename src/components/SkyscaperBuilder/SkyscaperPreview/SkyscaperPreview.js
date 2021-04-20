@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import classes from "./SkyscaperPreview.module.css";
 import SkyscaperLevel from "../SkyscaperLevel/SkyscaperLevel";
@@ -9,17 +7,13 @@ for (const level in levels){
     for (let i=0; i<levels[level]; i++){
     result.push(<SkyscaperLevel  key={level + i} type={level}/>)
 }
- }
-
-//  relative prewiuw
-//  absolute birdImage
-//  top
-
-    
+ }  
 return ( 
     <div className = {classes.SkyscaperPreview}>
         <div className={classes.levels}> 
              <div className ={classes.levels}/> 
+             
+             <div className={classes.rocketImage}></div>
              <div className={classes.birdImage}></div>
             {result}
         </div>
