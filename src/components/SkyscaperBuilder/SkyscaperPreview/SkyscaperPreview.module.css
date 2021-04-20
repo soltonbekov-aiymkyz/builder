@@ -59,6 +59,7 @@
   animation-iteration-count: infinite;
   animation-duration: 7s;
   /* z-index: inherit; */
+  animation-direction: alternate;
  
   
 } 
