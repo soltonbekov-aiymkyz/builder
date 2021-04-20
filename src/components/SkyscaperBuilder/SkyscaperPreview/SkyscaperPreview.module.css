@@ -47,6 +47,47 @@
 
 
 
+.rocketImage{
+  width: 80px;
+ 
+  
+
+
+  
+} 
+@keyframes rAnimation{
+ from{
+     left: 100%;
+ }
+ 0%{  
+    transform: translate(120px, 50%);
+ }
+ 50%{
+     right:100%;
+ }
+ 100%{
+   right: 100%;
+
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes bAnimation{
   from{
