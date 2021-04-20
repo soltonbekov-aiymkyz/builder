@@ -57,6 +57,8 @@
   bottom: 700px;
   animation-name: rAnimation;
   animation-iteration-count: infinite;
+  animation-duration: 7s;
+  /* z-index: inherit; */
  
   
 } 
