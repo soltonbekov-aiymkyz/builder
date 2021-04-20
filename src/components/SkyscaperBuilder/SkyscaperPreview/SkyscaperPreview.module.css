@@ -55,7 +55,9 @@
   background-repeat: no-repeat;
   position: absolute;
   bottom: 700px;
-
+  animation-name: rAnimation;
+ 
+  
 } 
 @keyframes rAnimation{
  from{
