@@ -49,11 +49,12 @@
 
 .rocketImage{
   width: 80px;
+  height: 80px;
  
   
 
 
-  
+
 } 
 @keyframes rAnimation{
  from{
