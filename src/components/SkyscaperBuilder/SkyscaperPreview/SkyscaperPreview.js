@@ -11,7 +11,9 @@ for (const level in levels){
 }
  }
 
- 
+//  relative prewiuw
+//  absolute birdImage
+//  top
 
     
 return ( 

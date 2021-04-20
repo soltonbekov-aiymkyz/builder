@@ -8,16 +8,13 @@
    padding-top: 50px;
    padding-bottom: 10px;
    border-radius: 30px;
- 
    display: flex;
    flex-direction: column;
    flex-wrap: nowrap;
    justify-content: center;
    align-items: center;
- 
    border: 10px dotted palevioletred;
    overflow: hidden;
-
 }
 .levels {
   display: flex;
@@ -37,15 +34,11 @@
    background-image: url(../../../Images/ch.png);
    background-size: cover;
    background-repeat: no-repeat;
-
    position: relative;
-  
-
- 
   animation-name: bAnimation;
  animation-iteration-count: infinite;
  animation-duration: 4s;
-
+/* z-index: inherit; */
  animation-direction: alternate;
  animation-timing-function: ease-in;    
 } 
@@ -54,18 +47,14 @@
       left: 100%;
   }
   0%{  
-      /* transform: rotate(250deg);    
-     transform: scale(.8);
-     left: -150; */
      transform: translate(120px, 50%);
   }
   50%{
-      transform: rotate(220deg);
+      right:100%;
   }
   100%{
-       
-     transform: scale(.13);
-     left: 100%;
+    right: 100%;
+ 
   }
 }
 
