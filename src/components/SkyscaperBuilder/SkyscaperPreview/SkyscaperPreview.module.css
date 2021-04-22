@@ -28,7 +28,6 @@
   border-radius: 1rem;
   padding: 0 1rem;
  }
-
  .birdImage{
    width: 40px;
    height: 40px;
@@ -74,8 +73,6 @@
   animation-direction: alternate;
   animation-timing-function: ease-in; 
 } 
-
-
 @keyframes cAnimation{
   0%{
     right: 100%;  
@@ -92,7 +89,8 @@
  @keyframes rAnimation{
   0%{  
     right:100%;
-     transform: translate(400px, 100%);
+     transform: translate(500px, 100%);
+     /* top: 600px; */
   }
   50%{
       right:100%;
