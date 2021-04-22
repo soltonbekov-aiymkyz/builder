@@ -40,13 +40,10 @@
   animation-name: bAnimation;
  animation-iteration-count: infinite;
  animation-duration: 7s;
-/* z-index: inherit; */
+ z-index:-1; 
  animation-direction: alternate;
  animation-timing-function: ease-in;    
 } 
-
-
-
 .rocketImage{
   width: 80px;
   height: 80px;
@@ -58,14 +55,10 @@
   animation-name: rAnimation;
   animation-iteration-count: infinite;
   animation-duration: 7s;
-  /* z-index: inherit; */
+   z-index: -1; 
   animation-direction: alternate;
-  animation-timing-function: ease-in; 
+  animation-timing-function: ease-in-out; 
 }
-
-
-
-
 .cloudImage{
   width: 80px;
   height: 80px;
@@ -77,61 +70,47 @@
   animation-name: cAnimation;
   animation-iteration-count: infinite;
   animation-duration: 7s;
-  /* z-index: inherit; */
+  z-index: -1; 
   animation-direction: alternate;
   animation-timing-function: ease-in; 
-  
-  
 } 
+
+
 @keyframes cAnimation{
- from{
-     left: 100%;
- }
- 0%{  
-    transform: translate(120px, 50%);
- }
- 50%{
-     right:100%;
- }
- 100%{
-   right: 100%;
-
- }
-}
-
-@keyframes rAnimation{
- from{
-     left: 100%;
- }
- 0%{  
-    transform: translate(120px, 50%);
- }
- 50%{
-     right:100%;
- }
- 100%{
-   right: 100%;
-
- }
-}
-
-@keyframes bAnimation{
-  from{
-      left: 100%;
+  0%{
+    right: 100%;  
+     transform: translate(400px, 100%);
   }
+  50%{
+      right:100%;
+     
+  }
+  100%{
+    right: 100%;
+  }
+ }
+ @keyframes rAnimation{
   0%{  
-     transform: translate(120px, 50%);
+    right:100%;
+     transform: translate(400px, 100%);
   }
   50%{
       right:100%;
   }
   100%{
     right: 100%;
- 
   }
-}
-
-
-
-
-
+ }
+ @keyframes bAnimation{
+   0%{ 
+    right:100%; 
+      transform: translate(400px, 100%);
+   }
+   50%{
+       right:100%;
+   }
+   100%{
+     right: 100%;
+   }
+ }
+  
