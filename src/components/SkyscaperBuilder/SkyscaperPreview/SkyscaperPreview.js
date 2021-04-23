@@ -12,10 +12,11 @@ return (
     <div className = {classes.SkyscaperPreview}>
         <div className={classes.levels}> 
              <div className ={classes.levels}/> 
-             
              <div className={classes.rocketImage}></div>
              <div className={classes.birdImage}></div>
              <div className={classes.cloudImage}></div>
+           
+             <div className={classes.tree1Image}></div>
             {result}
         </div>
     <div className={classes.price}>{price.toFixed(1)}som</div>
