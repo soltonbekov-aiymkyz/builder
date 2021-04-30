@@ -8,6 +8,8 @@ for (const level in levels){
     result.push(<SkyscaperLevel  key={level + i} type={level}/>)
 }
  }  
+
+//  if(levels.length=20)
 return ( 
     <div className = {classes.SkyscaperPreview}>
         <div className={classes.levels}> 

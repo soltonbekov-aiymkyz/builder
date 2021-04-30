@@ -1,5 +1,4 @@
 .SkyscaperPreview {
-   background-color: #e3dae7;
    margin: 0 auto;
    margin-bottom: 20px;
    min-height: 430px;
@@ -16,6 +15,8 @@
    overflow: hidden;
    position: relative;
    z-index: -1;
+   background-color: #e3dae7;
+
 }
 .levels {
   display: flex;
@@ -50,7 +51,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  bottom: 1000px;
+  bottom: 1500px;
   animation-name: rAnimation;
   animation-iteration-count: infinite;
   animation-duration: 7s;
@@ -73,9 +74,6 @@
   animation-direction: alternate;
   animation-timing-function: ease-in; 
 } 
-
-
-
 .tree1Image{
   width: 100px;
   height: 150px;
@@ -91,14 +89,55 @@
   animation-direction: alternate;
   animation-timing-function: ease-in;
 } 
+.seaImage{
+  width: 80px;
+  height: 80px;
+  background-image: url(../../../Images/seagull.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 1200px;
+  animation-name: fAnimation;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  z-index: -1; 
+  animation-direction: alternate;
+  animation-timing-function: ease-in; 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes fAnimation{
+  0%{
+    right: 100%;  
+     transform: translate(400px, 100%);  
+  }
+  50%{
+      right:100%; 
+  }
+  100%{
+    right: 100%;
+  }
+ }
 @keyframes tAnimation{
   0%{
     left: 80%;  
       transform: scale(.8); 
   }
   50%{
-      right:80%;
-     
+      right:80%;  
   }
   100%{
     right: 80%;
@@ -107,13 +146,10 @@
 @keyframes cAnimation{
   0%{
     right: 100%;  
-     transform: translate(400px, 100%);
-     
+     transform: translate(400px, 100%);  
   }
   50%{
-      right:100%;
-    
-     
+      right:100%; 
   }
   100%{
     right: 100%;

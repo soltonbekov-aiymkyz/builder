@@ -1,11 +1,8 @@
-
 .SkyscaperLevel{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 25px;
-
-   
+    margin-top: 25px; 
 }
 .ControlButton {
     border-radius: 50%;
@@ -20,15 +17,9 @@
     background-color: #b709ce;
     box-shadow: 0px 0px 15px black;
 }
-
 .SkyscpaerControl {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: .5rem 0;
-
-
-    
-
-
   }
