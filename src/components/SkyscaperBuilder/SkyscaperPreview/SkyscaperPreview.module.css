@@ -138,9 +138,6 @@
   animation-direction: alternate;
   animation-timing-function: ease-in; 
 } 
-
-
-
 @keyframes sunAnimation{
   0%{
     right: 100%;  
@@ -153,12 +150,6 @@
     right: 100%;
   }
  }
-
-
-
-
-
-
 @keyframes cloAnimation{
   0%{
     right: 100%;  
