@@ -123,8 +123,36 @@
 } 
 
 
+.sunImage{
+  width: 80px;
+  height: 80px;
+  background-image: url(../../../Images/sun.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 100px;
+  animation-name: sunAnimation;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  z-index: -1; 
+  animation-direction: alternate;
+  animation-timing-function: ease-in; 
+} 
 
 
+
+@keyframes sunAnimation{
+  0%{
+    right: 100%;  
+     transform: translate(80px, 50%);  
+  }
+  50%{
+      right:100%; 
+  }
+  100%{
+    right: 100%;
+  }
+ }
 
 
 
