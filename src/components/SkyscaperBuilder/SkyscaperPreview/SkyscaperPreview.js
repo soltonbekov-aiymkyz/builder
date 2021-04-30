@@ -18,6 +18,7 @@ return (
              <div className={classes.birdImage}></div>
              <div className={classes.cloudImage}></div>
            
+             <div className={classes.seaImage}></div>
              <div className={classes.tree1Image}></div>
             {result}
         </div>
