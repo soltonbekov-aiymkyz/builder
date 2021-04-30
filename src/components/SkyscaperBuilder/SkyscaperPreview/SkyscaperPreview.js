@@ -9,7 +9,15 @@ for (const level in levels){
 }
  }  
 
-//  if(levels.length=20)
+// if (level.length < 20) {
+//     console.log( 'background-color:black;' );
+//   } else if (level.lengh< 20) {
+//     console.log( 'background-color:white;' );
+
+
+
+
+
 return ( 
     <div className = {classes.SkyscaperPreview}>
         <div className={classes.levels}> 
@@ -18,6 +26,7 @@ return (
              <div className={classes.birdImage}></div>
              <div className={classes.cloudImage}></div>
            
+             <div className={classes.sunImage}></div>
              <div className={classes.cloImage}></div>
              <div className={classes.seaImage}></div>
              <div className={classes.tree1Image}></div>
