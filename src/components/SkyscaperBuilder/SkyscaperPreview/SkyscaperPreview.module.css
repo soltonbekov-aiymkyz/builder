@@ -106,6 +106,21 @@
 } 
 
 
+.cloImage{
+  width: 80px;
+  height: 80px;
+  background-image: url(../../../Images/cloud-computing.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 770px;
+  animation-name: cloAnimation;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  z-index: -1; 
+  animation-direction: alternate;
+  animation-timing-function: ease-in; 
+} 
 
 
 
@@ -116,6 +131,18 @@
 
 
 
+@keyframes cloAnimation{
+  0%{
+    right: 100%;  
+     transform: translate(600px, 100%);  
+  }
+  50%{
+      right:100%; 
+  }
+  100%{
+    right: 100%;
+  }
+ }
 
 
 
