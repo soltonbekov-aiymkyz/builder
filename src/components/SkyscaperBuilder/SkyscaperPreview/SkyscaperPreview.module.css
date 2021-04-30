@@ -16,7 +16,6 @@
    position: relative;
    z-index: -1;
    background-color: #e3dae7;
-
 }
 .levels {
   display: flex;
@@ -104,8 +103,6 @@
   animation-direction: alternate;
   animation-timing-function: ease-in; 
 } 
-
-
 .cloImage{
   width: 80px;
   height: 80px;
@@ -121,8 +118,6 @@
   animation-direction: alternate;
   animation-timing-function: ease-in; 
 } 
-
-
 .sunImage{
   width: 80px;
   height: 80px;
@@ -162,9 +157,6 @@
     right: 100%;
   }
  }
-
-
-
 @keyframes fAnimation{
   0%{
     right: 100%;  
