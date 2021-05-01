@@ -17,7 +17,6 @@ body {
     color: rgb(63, 65, 226);
     font-size: 38px;
 
-   
      animation-name: scaleAnimation;
     animation-iteration-count: infinite;
     animation-duration: 4s;
