@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./SkyscaperBuilder.module.css";
 import SkyscaperPreview from "./SkyscaperPreview/SkyscaperPreview";
 import SkyscaperControls from "./SkyscaperControls/SkyscaperControls";
@@ -7,40 +6,21 @@ import Modal from "../UI/Modal/Modal";
 import { useEffect, useState } from "react"
 import OrderSummary from "./OrderSummary/OrderSummary";
 import Button from "../UI/Button/Button"
-const SkyscaperBuilder = () => {
-  const prices = {
-    floor1: 12000,
-    floor2: 1234567,
-    floor3: 12345,
-    floor4: 34567,
-    floor5: 34567,
-  }
-  const [levels, setLevels] = useState({});
-  const [price, setPrice] = useState(150);
+import { useSelector } from "react-redux";
+
+const SkyscaperBuilder = ({history}) => {
+const levels = useSelector(state => state.levels);
+ const price = useSelector(state => state.price);
   const [ordering, setOrdering] = useState(false);
-  useEffect(loadDefaults, []);
-  function loadDefaults() {
-    axios
-      .get('https://builder-6b86c-default-rtdb.firebaseio.com/default.json')
-      .then(response => {
-        setPrice(response.data.price);
-        setLevels(response.data.levels);
-      });
-  }
-  function addLevel(type) {
-    const newlevels = { ...levels };
-    newlevels[type]++;
-    setPrice(price + prices[type]);
-    setLevels(newlevels);
-  }
-  function removeLevel(type) {
-    if (levels[type]) {
-      const newLevels = { ...levels };
-      newLevels[type]--;
-      setLevels(newLevels);
-      setPrice(price - prices[type])
-    }
-  }
+  // useEffect(loadDefaults, []);
+  // function loadDefaults() {
+  //   axios
+  //     .get('https://builder-6b86c-default-rtdb.firebaseio.com/default.json')
+  //     .then(response => {
+  //       setPrice(response.data.price);
+  //       setLevels(response.data.levels);
+  //     });
+  // }
   function startOrdering() {
     setOrdering(true);
   }
@@ -58,17 +38,17 @@ const SkyscaperBuilder = () => {
       })
       .then(() => {
         setOrdering(false);
-        loadDefaults();
+        // loadDefaults();
+        history.push('/checkout');
       });
   }
   return (
     <div className={classes.SkyscaperBuilder}>
-      <SkyscaperPreview levels={levels}
+      <SkyscaperPreview
+       levels={levels}
         price={price} />
       <SkyscaperControls
         levels={levels}
-        addLevel={addLevel}
-        removeLevel={removeLevel}
         startOrdering={startOrdering}
       />
       <Modal
@@ -85,3 +65,6 @@ const SkyscaperBuilder = () => {
   )
 };
 export default SkyscaperBuilder;
+
+
+
