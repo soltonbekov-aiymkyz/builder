@@ -25,7 +25,6 @@ import Checkout from "./components/Checkout/Checkout";
 import Orders from "./components/Orders/Orders";
 import "./App.css";
 import { Redirect, Route, Switch } from "react-router";
-
 const App = () => {
   return (
     <div className="App">
@@ -40,29 +39,7 @@ const App = () => {
     </div>
   );
 }
-
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
