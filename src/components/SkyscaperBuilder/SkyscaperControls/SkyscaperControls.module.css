@@ -16,7 +16,17 @@
      align-items: center;
      justify-content: center;
      
-}
-
+} 
 /* 
-#a0849d */
+.SkyscaperControls {
+     min-width: 300px;
+     max-height: 490px;
+     padding: 1rem;
+     background-color: #008bee;
+     color: white;
+     border-radius: 30px;
+ }
+ .DivButton {
+     margin-top: 25px;
+     text-align: center;
+ } */ 
