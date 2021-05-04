@@ -1,5 +1,4 @@
 import classes from "./Button.module.css";
-
 const Button = (props) => {
   const className = [classes.Button];
     if (props.green) {
@@ -10,5 +9,3 @@ const Button = (props) => {
   );
 }
 export default Button;
-
-
