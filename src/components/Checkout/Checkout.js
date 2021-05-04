@@ -73,11 +73,11 @@ const Checkout = ({ history }) => {
       address: data.get('address'),
       phone: data.get('phone'),
       levels: {
-        floo1: 10,
-        floor2: 10,
-        floor3: 10,
-        floor4: 10,
-        floor5: 10,
+        floo1: 3,
+        floor2: 3,
+        floor3: 3,
+        floor4: 3,
+        floor5: 3,
       },
       price: 100,
     }).then(response => {
@@ -90,7 +90,7 @@ const Checkout = ({ history }) => {
       <SkyscaperPreview levels={{
         floor1: 5, 
         floor2: 10,
-       floor3: 50,
+       floor3: 5,
       }} price={150} />
       <CheckoutForm
         cancelCallback={cancelCallback}
@@ -99,3 +99,5 @@ const Checkout = ({ history }) => {
   );
 }
 export default Checkout;
+
+
