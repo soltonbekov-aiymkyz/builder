@@ -1,8 +1,8 @@
-.SkyscaperPreview {
+  /* .SkyscaperPreview {
    margin: 0 auto;
    margin-bottom: 20px;
    min-height: 430px;
-   min-width: 430px;
+   min-width: 430px; 
    padding-top: 50px;
    padding-bottom: 10px;
    border-radius: 30px;
@@ -27,7 +27,41 @@
   background-color: rgb(213, 92, 224);
   border-radius: 1rem;
   padding: 0 1rem;
- } 
+ }  
+ 
+   */
+ 
+ .SkyscaperPreview {
+  width: 100%;
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+  min-height: 430px;
+  max-width: 430px;
+  padding-top: 50px; 
+  padding-bottom: 10px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 10px dotted rgb(187, 111, 136);
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  background-color: #e3dae7;
+} 
+.levels {
+ display: flex;
+ flex-direction: column;
+}
+.price {
+ font-size: 1.5rem;
+ color: white;
+ background-color: rgb(213, 92, 224);
+ border-radius: 1rem;
+ padding: 0 1rem;
+}   
 
 
 
@@ -39,7 +73,7 @@
 
 
 
-
+ */
 
 
  .birdImage{
