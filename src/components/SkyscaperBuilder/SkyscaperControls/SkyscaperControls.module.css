@@ -23,5 +23,6 @@
      width: 300px;
      height:400px;
      padding: 1rem;
-    
+     border: 10px dotted rgb(224, 201, 209);
+   
 }  
