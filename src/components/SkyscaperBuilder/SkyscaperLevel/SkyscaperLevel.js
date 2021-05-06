@@ -2,9 +2,9 @@
 // import classes from "./SkyscaperLevel.module.css"
 
 import floor1 from "../../../Images/livingFloor.jpg"
-import floor2 from "../../../Images/me.jpg"
+import floor2 from "../../../Images/do.jpg"
 import floor3 from "../../../Images/bookstoree1.png"
-import floor4 from "../../../Images/rooos.jpg"
+import floor4 from "../../../Images/me.jpg"
 import floor5 from "../../../Images/wer.jpg"
 
 // import floorF1 from "../../../Images/roof.jpg"
