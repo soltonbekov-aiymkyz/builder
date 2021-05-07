@@ -7,7 +7,7 @@ import floor3 from "../../../Images/bookstoree1.png"
 import floor4 from "../../../Images/me.jpg"
 import floor5 from "../../../Images/wer.jpg"
 
-// import floorF1 from "../../../Images/roof.jpg"
+// import floorF1 from "../../../Images/fitF1.png"
 
 const SkyscaperLevel =({type}) => {
     const types = {
@@ -18,8 +18,7 @@ const SkyscaperLevel =({type}) => {
         floor5 : {backgroundImage : `url(${floor5})` , width:"170px", height:"120px",  backgroundSize: "Cover"},
 
 
-        // floorF1 : {backgroundImage : `url(${floorF1})` , width:"170px", height:"80px",  backgroundSize: "Cover"},
-
+        //  floorF1 : {backgroundImage : `url(${floorF1})` , width:"170px", height:"120px",  backgroundSize: "Cover"},
     }
     return ( 
     <div    style={types[type]}> </div>
