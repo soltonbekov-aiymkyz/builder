@@ -107,8 +107,8 @@ import classes from "./Checkout.module.css";
 import axios from "axios";
 import { useSelector } from "react-redux";
 const Checkout = ({ history }) => {
-  const levels = useSelector(state => state.levels);
-  const price = useSelector(state => state.price);
+  const levels = useSelector(state => state.builder.levels);
+  const price = useSelector(state => state.builder.price);
 
   function cancelCallback() {
     history.replace('/');
@@ -141,5 +141,16 @@ const Checkout = ({ history }) => {
 }
  
 export default Checkout;
+
+
+
+
+
+
+
+
+
+
+
 
 
