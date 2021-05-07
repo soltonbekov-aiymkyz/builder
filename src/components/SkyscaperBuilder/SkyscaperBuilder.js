@@ -6,12 +6,18 @@ import Modal from "../UI/Modal/Modal";
 import { useEffect, useState } from "react"
 import OrderSummary from "./OrderSummary/OrderSummary";
 import Button from "../UI/Button/Button"
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { load } from "../../store/actions/builder";
 
 const SkyscaperBuilder = ({history}) => {
-const levels = useSelector(state => state.levels);
- const price = useSelector(state => state.price);
+ const dispatch = useDispatch();
+const levels = useSelector(state => state.builder.levels);
+ const price = useSelector(state => state.builder.price);
   const [ordering, setOrdering] = useState(false);
+
+
+  
+  useEffect(() => dispatch(load()), []);
   // useEffect(loadDefaults, []);
   // function loadDefaults() {
   //   axios
@@ -21,27 +27,21 @@ const levels = useSelector(state => state.levels);
   //       setLevels(response.data.levels);
   //     });
   // }
+
   function startOrdering() {
     setOrdering(true);
   }
   function stopOrdering() {
     setOrdering(false);
   }
+ 
+  
   function finishOrdering() {
-    axios
-      .post('https://builder-6b86c-default-rtdb.firebaseio.com/orders.json', {
-        levels: levels,
-        price: price,
-        address: "oktyabrskaya",
-        phone: "0 777 777 777",
-        name: "Sadyr Japarov",
-      })
-      .then(() => {
-        setOrdering(false);
-        // loadDefaults();
-        history.push('/checkout');
-      });
+    setOrdering(false);
+    // loadDefaults();
+    history.push('/checkout');
   }
+//)  
   return (
     <div className={classes.SkyscaperBuilder}>
       <SkyscaperPreview
@@ -53,7 +53,7 @@ const levels = useSelector(state => state.levels);
       />
       <Modal
         show={ordering}
-        cancel={stopOrdering}>Hello
+        cancel={stopOrdering}>
         <OrderSummary
           levels={levels}
           price={price}
@@ -65,6 +65,20 @@ const levels = useSelector(state => state.levels);
   )
 };
 export default SkyscaperBuilder;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
 
 
 
