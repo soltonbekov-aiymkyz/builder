@@ -1,8 +1,8 @@
-// import axios from "axios";
-// import { useEffect, useState } from "react";
-// import Order from "./Order/Order";
-// import classes from "./Orders.module.css";
-// const Orders = () => {
+//  import axios from "axios";
+//  import { useEffect, useState } from "react";
+//  import Order from "./Order/Order";
+//  import classes from "./Orders.module.css";
+//  const Orders = () => {
 //   const [orders, setOrders] = useState([]);
 //   useEffect(() => {
 //     axios.get('https://builder-6b86c-default-rtdb.firebaseio.com/orders.json')
@@ -31,30 +31,28 @@
 
 
 
-import axios from "axios";
+ import axios from "axios";
 import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { load } from "../../store/actions/orders";
-import Order from "./Order/Order";
-import classes from "./Orders.module.css";
+ import { useDispatch, useSelector } from "react-redux";
+ import { load } from "../../store/actions/orders";
+ import Order from "./Order/Order";
+ import classes from "./Orders.module.css";
 
-const Orders = () => {
-  const dispatch = useDispatch();
-  const orders = useSelector(state => state.orders);
+ const Orders = () => {
+   const dispatch = useDispatch();
+   const orders = useSelector(state => state.orders);
 
-  useEffect(() => {
-    dispatch(load());
-  }, []);
+   useEffect(() => {
+     dispatch(load());
+   }, []);
 
-  const results = orders.map(order => <Order key={order.id} {...order} />);
+   const results = orders.map(order => <Order key={order.id} {...order} />);
 
-  return (
-    <div className={classes.Orders}>
-      {results}
-    </div>
-  );
-}
-
-export default Orders;
-
+   return (
+     <div className={classes.Orders}>
+       {results}
+     </div>
+   );
+ }
+ export default Orders;
 
