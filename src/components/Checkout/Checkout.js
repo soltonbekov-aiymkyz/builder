@@ -2,6 +2,8 @@
 import CheckoutForm from "./CheckoutForm/CheckoutForm";
 import classes from "./Checkout.module.css";
 import axios from "axios";
+import withAxios from "../withAxios";
+
 import { useSelector } from "react-redux";
 const Checkout = ({ history }) => {
   const levels = useSelector(state => state.builder.levels);
@@ -32,10 +34,7 @@ const Checkout = ({ history }) => {
     </div>
   );
 }
-export default Checkout;
-
-
-
+export default withAxios(Checkout, axios) ;
 
 
 
