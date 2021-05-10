@@ -1,8 +1,4 @@
 
-
-
-
-
  import { useDispatch } from "react-redux";
  import { add, remove } from "../../../../store/actions/builder";
   import Button from "../../../UI/Button/Button";
@@ -12,17 +8,13 @@
       const dispatch = useDispatch();
     
    const name ={
+            //  floor0: "house",  
             floor1: "Guest house",
              floor2:"library",
              floor3:"shopping",
              floor4:"flower shop",
-             floor5:"plant house",
-
-
-             
-    // floor6: "house",
+             floor5:"plant house",          
               }
-
   return (
       <div className={classes.SkyscaperControl}>
         <Button onClick={() => dispatch({ type: "ADD_LEVEL", level: type })}>+</Button>
