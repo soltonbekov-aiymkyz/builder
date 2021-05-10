@@ -13,14 +13,10 @@
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  /* border: 10px dotted rgb(187, 111, 136); */
   overflow: hidden;
   position: relative;
   z-index: -1;
-  /* background-color: #e3dae7; */
    background-color:  #f0e6ab ; 
-    border: 1px solid black; 
-
 } 
 .levels {
  display: flex;
