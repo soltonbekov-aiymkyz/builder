@@ -58,7 +58,6 @@ const withAxios = (WrappedComponent, axios) => {
     function hideError() {
       setError(false);
     }
-
     const requestInterceptor = axios.interceptors.request.use((request) => {
       setError(false);
       return request;
