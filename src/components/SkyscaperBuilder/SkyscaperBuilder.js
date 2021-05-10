@@ -9,6 +9,9 @@ import Button from "../UI/Button/Button"
 import { useDispatch, useSelector } from "react-redux";
 import { load } from "../../store/actions/builder";
 
+import withAxios from "../withAxios";
+
+
 const SkyscaperBuilder = ({history}) => {
  const dispatch = useDispatch();
 const levels = useSelector(state => state.builder.levels);
@@ -64,13 +67,8 @@ const levels = useSelector(state => state.builder.levels);
     </div>
   )
 };
-export default SkyscaperBuilder;
 
-
-
-
-  
-
+export default withAxios(SkyscaperBuilder, axios);
 
 
 
