@@ -9,9 +9,12 @@
     padding: 0 1rem;
 
 
+   
+
     font-size: 2rem;
-    color: white;
-    background-color:#d3b3b8 ;
+    color: black;
+    /* background-color:#d3b3b8 ; */
+    background-color:  #f6d2d9;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   }
   
