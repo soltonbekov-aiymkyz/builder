@@ -37,7 +37,7 @@ import { useEffect, useState } from "react";
  import { load } from "../../store/actions/orders";
  import Order from "./Order/Order";
  import classes from "./Orders.module.css";
-
+ import withAxios from "../withAxios";
  const Orders = () => {
    const dispatch = useDispatch();
    const orders = useSelector(state => state.orders);
@@ -54,5 +54,4 @@ import { useEffect, useState } from "react";
      </div>
    );
  }
- export default Orders;
-
+ export default withAxios(Orders, axios);
