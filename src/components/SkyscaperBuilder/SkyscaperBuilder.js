@@ -8,18 +8,13 @@ import OrderSummary from "./OrderSummary/OrderSummary";
 import Button from "../UI/Button/Button"
 import { useDispatch, useSelector } from "react-redux";
 import { load } from "../../store/actions/builder";
-
 import withAxios from "../withAxios";
-
 
 const SkyscaperBuilder = ({history}) => {
  const dispatch = useDispatch();
 const levels = useSelector(state => state.builder.levels);
  const price = useSelector(state => state.builder.price);
   const [ordering, setOrdering] = useState(false);
-
-
-  
   useEffect(() => dispatch(load()), []);
   // useEffect(loadDefaults, []);
   // function loadDefaults() {
@@ -37,8 +32,6 @@ const levels = useSelector(state => state.builder.levels);
   function stopOrdering() {
     setOrdering(false);
   }
- 
-  
   function finishOrdering() {
     setOrdering(false);
     // loadDefaults();
@@ -67,7 +60,6 @@ const levels = useSelector(state => state.builder.levels);
     </div>
   )
 };
-
 export default withAxios(SkyscaperBuilder, axios);
 
 
