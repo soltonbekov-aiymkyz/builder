@@ -7,7 +7,7 @@ import classes from "./SkyscaperControl.module.css";
 const SkyscaperControl = ({ type, count }) => {
   const dispatch = useDispatch();
   const name = {
-    floor0: "house",
+    // floor0: "roof",
     floor1: "Guest house",
     floor2: "library",
     floor3: "shopping",
