@@ -1,13 +1,12 @@
-
- import floor0 from "../../../Images/gym20.jpg"
+import floor0 from "../../../Images/ai.svg"
 import floor1 from "../../../Images/livingFloor.jpg"
 import floor2 from "../../../Images/do.jpg"
-import floor3 from "../../../Images/glob.jpg"
-import floor4 from "../../../Images/bookstoree1.png"
-import floor5 from "../../../Images/sale.jpg"
+import floor3 from "../../../Images/sale.jpg"
+import floor4 from "../../../Images/me.jpg"
+import floor5 from "../../../Images/bookstoree1.png"
 const SkyscaperLevel = ({ type }) => {
     const types = {
-        floor0: { backgroundImage: `url(${floor0})`, width: "170px", height: "80px", backgroundSize: "Cover" },
+         floor0: { backgroundImage: `url(${floor0})`, width: "170px", height: "80px", backgroundSize: "Cover" },
         floor1: { backgroundImage: `url(${floor1})`, width: "170px", height: "80px", backgroundSize: "Cover" },
         floor2: { backgroundImage: `url(${floor2})`, width: "170px", height: "100px", backgroundSize: "Cover" },
         floor3: { backgroundImage: `url(${floor3})`, width: "170px", height: "120px", backgroundSize: "Cover" },
