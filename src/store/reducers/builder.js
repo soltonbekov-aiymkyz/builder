@@ -1,22 +1,19 @@
 import { ADD_LEVEL, REMOVE_LEVEL, SET_LEVELS} from "../actions/types";
-
 const initialState = {
     levels: {
   },
   price: 0,
 };
 const prices = {
+    // floor0: 4000,
     floor1: 50000,
     floor2: 4000,
     floor3 : 12000,
     floor4: 23000,
     floor5: 13000,
-  };
-
-  
+  }; 
 const builder = (state = initialState, action) => {
     const newState = { ...state };
-  
     switch (action.type) {
       case ADD_LEVEL:
         newState.levels[action.level]++;
@@ -34,10 +31,8 @@ const builder = (state = initialState, action) => {
       default:
         break;
     }
-  
     return newState;
   }
-  
   export default builder;
 
 
