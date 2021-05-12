@@ -3,8 +3,10 @@
     margin: 0 .5rem;
     padding: 0 1rem;
     border-radius: 1rem;
-    background-color: rgb(109, 166, 199);
-    color: white;
+    background-color: rgb(113, 190, 235);
+    
+    box-shadow: 0px 0px 15px  rgb(187, 222, 236) ;
+   color: #f6cbfcf6; 
     font-weight: bold;
     font-size: 1.5rem;
     cursor: pointer;
