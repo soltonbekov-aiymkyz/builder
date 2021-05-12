@@ -16,7 +16,7 @@
   overflow: hidden;
   position: relative;
   z-index: -1;
-   background-color:  #f0e6ab ; 
+   background-color: #CAE7DF; 
 } 
 .levels {
  display: flex;
@@ -25,7 +25,7 @@
 .price {
  font-size: 1.5rem;
  color: white;
- background-color: rgb(213, 92, 224);
+ background-color: #ee9dad;
  border-radius: 1rem;
  padding: 0 1rem;
 }   
