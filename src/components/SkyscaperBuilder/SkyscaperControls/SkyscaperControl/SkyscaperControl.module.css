@@ -6,17 +6,23 @@
     align-items: center;
     margin-top: 10px;
 }
+
 .ControlButton {
     border-radius: 50%;
     border: 0px;
     font-size: 25px;
-    color: #b709ce;
+    color: #54dfe4;
     width: 30px;
     height: 30px;
     outline: none;
 }
 .ControlButton:hover {
     color: white;
-    background-color: #b709ce;
+    background-color: #3f91c0;
     box-shadow: 0px 0px 15px black;
 }
+/* 
+  .SkyscaperControl .level div {
+    position: static;
+    margin: 0 .5rem;
+  } */
