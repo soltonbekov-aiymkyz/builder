@@ -1,5 +1,4 @@
 
-
   .Toolbar {
     display: flex;
     justify-content: space-between;
@@ -7,17 +6,11 @@
     top: 0;
     left: 0;
     padding: 0 1rem;
-
-
-   
-
     font-size: 2rem;
-    color: black;
-    /* background-color:#d3b3b8 ; */
+     color: rgb(113, 190, 235); 
     background-color:  #f6d2d9;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   }
-  
   @media (max-width: 549px) {
     .Toolbar nav {
       display: none;
