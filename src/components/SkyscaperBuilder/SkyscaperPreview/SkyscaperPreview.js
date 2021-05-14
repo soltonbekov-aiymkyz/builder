@@ -41,9 +41,9 @@ return (
     <div className={classes.price}>{price.toFixed(1)}som</div>
     </div>
 );
-
-
 }
 export default SkyscaperPreview;
+
+
 
 
