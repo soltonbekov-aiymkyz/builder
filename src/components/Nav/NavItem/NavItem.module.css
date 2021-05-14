@@ -1,5 +1,6 @@
 .NavItem a {
-    color: rgb(113, 190, 235);
+    /* color: rgb(113, 190, 235); */
+    color: black;
     border-bottom: 5px solid transparent;
     text-decoration: none;
     display: block;
