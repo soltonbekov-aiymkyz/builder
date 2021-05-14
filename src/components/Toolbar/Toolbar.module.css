@@ -6,8 +6,10 @@
     top: 0;
     left: 0;
     padding: 0 1rem;
-    font-size: 2rem;
-     color: rgb(113, 190, 235); 
+    /* font-size: 2rem; */
+    font-size: 28px;
+     /* color: rgb(113, 190, 235);  */
+     color: black;
     background-color:  #f6d2d9;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   }
