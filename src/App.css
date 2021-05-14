@@ -1,17 +1,15 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); */
-
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+ /* @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap'); */
 *{
     box-sizing: border-box;
 }
 body {
     margin: 0 ;
+/* font-family: 'Merienda', cursive;  */
 
-   font-family: 'Berkshire Swash', cursive;
+   font-family: 'Nanum Gothic', sans-serif; 
 }
-/* 
-@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
-*/
+
 .App h1 {
      text-align: center; 
     color: rgb(63, 65, 226);
@@ -23,7 +21,6 @@ body {
     animation-direction: alternate;
     animation-timing-function: ease-in;    
 } 
-
 @keyframes scaleAnimation {
     10%{
         
