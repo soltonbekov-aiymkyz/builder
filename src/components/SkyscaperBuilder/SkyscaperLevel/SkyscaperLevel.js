@@ -1,8 +1,10 @@
 import floor0 from "../../../Images/ai.svg"
 import floor1 from "../../../Images/livingFloor.jpg"
 import floor2 from "../../../Images/do.jpg"
-import floor3 from "../../../Images/sale.jpg"
-import floor4 from "../../../Images/me.jpg"
+
+// import floor3 from "../../../Images/220.svg"
+import floor3 from "../../../Images/hospital9.jpg"
+import floor4 from "../../../Images/spa1.jpg"
 import floor5 from "../../../Images/bookstoree1.png"
 const SkyscaperLevel = ({ type }) => {
     const types = {
@@ -18,3 +20,6 @@ const SkyscaperLevel = ({ type }) => {
     );
 }
 export default SkyscaperLevel;
+//komuniikasya s klientom
+
+
