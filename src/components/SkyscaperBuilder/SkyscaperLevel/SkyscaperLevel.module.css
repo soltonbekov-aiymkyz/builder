@@ -1,0 +1,12 @@
+/* .SkyscaperLevel{
+    position: relative;
+    animation: spin .5s ease-out 1;
+  }
+  @keyframes spin {
+    0% {
+      transform: translateY(-350px);
+    }
+    100% {
+      transform: translateY(180px);
+    }
+  }     */
