@@ -7,15 +7,11 @@ import classes from "./SkyscaperControl.module.css";
 const SkyscaperControl = ({ type, count }) => {
   const dispatch = useDispatch();
   const name = {
-    // floor0: "roof",
     floor1: "Guest house",
     floor2: "library",
     floor3: "shopping",
     floor4: "flower shop",
     floor5: "plant house",
-
-    
-    // zbasement: "basement",
   }
   return (
     <div className={classes.SkyscaperControl}>
@@ -30,8 +26,9 @@ const SkyscaperControl = ({ type, count }) => {
 }
 export default SkyscaperControl;
 
-
-
+//autentifikasiya avtorizasiya
+//optimizasiya proekta 
+//
 
 
 

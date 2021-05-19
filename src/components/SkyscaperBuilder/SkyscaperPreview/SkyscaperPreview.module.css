@@ -104,11 +104,11 @@
   animation-timing-function: ease-in; 
 } 
  .background{
-  height: 140px;
-  width: 2000px;
-  background-color:rgb(70, 54, 40) ;
+  height: 150px;
+  width: 500px;
+  background-color:rgb(92, 69, 49) ; 
   position: absolute;
-  bottom: 10px;
+  bottom: 1px;
   z-index: -1;
   left:0;
 
