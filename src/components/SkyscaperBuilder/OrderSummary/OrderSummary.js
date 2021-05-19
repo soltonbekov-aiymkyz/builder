@@ -8,6 +8,9 @@ const OrderSummary = ({levels, price}) => {
          floor3:"shopping",
          floor4:"flower shop",
          floor5:"plant house",
+
+         
+        //  zbasement:"basement",
     }
     const results =Object.keys(levels)
      .map(type => <li>{labels[type]} : {levels[type]}</li>)
