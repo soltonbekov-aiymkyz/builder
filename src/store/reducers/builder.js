@@ -11,6 +11,9 @@ const prices = {
     floor3 : 12000,
     floor4: 23000,
     floor5: 13000,
+
+    // zbasement: 13000,
+
   }; 
 const builder = (state = initialState, action) => {
     const newState = { ...state };

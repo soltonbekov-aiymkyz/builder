@@ -34,9 +34,12 @@ return (
              <div className={classes.cloudImage}></div>
              <div className={classes.cloImage}></div>
              <div className={classes.seaImage}></div>
-             <div className={classes.tree1Image}></div>
+       
+             <div className={classes.travaImage}></div>
              <SkyscaperLevel type="floor0" />
             {result}
+            <SkyscaperLevel type="basement" />
+              <div className={classes.background}></div> 
         </div>
     <div className={classes.price}>{price.toFixed(1)}som</div>
     </div>

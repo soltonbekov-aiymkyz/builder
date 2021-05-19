@@ -13,6 +13,9 @@ const SkyscaperControl = ({ type, count }) => {
     floor3: "shopping",
     floor4: "flower shop",
     floor5: "plant house",
+
+    
+    // zbasement: "basement",
   }
   return (
     <div className={classes.SkyscaperControl}>
