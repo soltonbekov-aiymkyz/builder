@@ -1,5 +1,5 @@
   import axios from "../../axios";
-  import { ADD_LEVEL, REMOVE_LEVEL , SET_LEVELS} from "./types";
+  import { SET_LEVELS} from "./types";
   export const add = ( level) => ({
     type: "ADD_LEVEL",
     level:  level

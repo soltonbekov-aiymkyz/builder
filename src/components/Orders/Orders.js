@@ -1,6 +1,6 @@
 
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { load } from "../../store/actions/orders";
 import Order from "./Order/Order";
@@ -11,7 +11,7 @@ const Orders = () => {
   const orders = useSelector(state => state.orders);
   useEffect(() => {
     dispatch(load());
-  }, []);
+  }, [dispatch]);
   const results = orders.map(order => <Order key={order.id} {...order} />);
   return (
     <div className={classes.Orders}>

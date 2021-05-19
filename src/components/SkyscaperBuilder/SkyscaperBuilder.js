@@ -15,7 +15,10 @@ const SkyscaperBuilder = ({history}) => {
 const levels = useSelector(state => state.builder.levels);
  const price = useSelector(state => state.builder.price);
   const [ordering, setOrdering] = useState(false);
-  useEffect(() => dispatch(load()), []);
+ useEffect(() => dispatch(load()), [dispatch]);
+
+
+
   // useEffect(loadDefaults, []);
   // function loadDefaults() {
   //   axios

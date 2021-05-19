@@ -1,8 +1,6 @@
 
 import { useDispatch } from "react-redux";
-import { add, remove } from "../../../../store/actions/builder";
 import Button from "../../../UI/Button/Button";
-import SkyscaperLevel from "../../SkyscaperLevel/SkyscaperLevel";
 import classes from "./SkyscaperControl.module.css";
 const SkyscaperControl = ({ type, count }) => {
   const dispatch = useDispatch();
