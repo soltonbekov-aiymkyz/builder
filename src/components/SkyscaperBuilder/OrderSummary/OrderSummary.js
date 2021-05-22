@@ -2,15 +2,11 @@
 import classes from "./OrderSummary.module.css";
 const OrderSummary = ({levels, price}) => {
     const labels = {
-        // floor0:"roof",
         floor1: "Guest house",
          floor2:"library",
          floor3:"shopping",
          floor4:"flower shop",
          floor5:"plant house",
-
-         
-        //  zbasement:"basement",
     }
     const results =Object.keys(levels)
      .map(type => <li>{labels[type]} : {levels[type]}</li>)
@@ -24,5 +20,4 @@ const OrderSummary = ({levels, price}) => {
         </div>   
      );
 }
- 
 export default OrderSummary;
