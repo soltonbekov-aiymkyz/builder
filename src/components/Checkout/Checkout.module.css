@@ -1,4 +1,16 @@
-.Checkout {
+ .Checkout {
     width: 420px;
     margin: 0 auto;
   }
+ 
+/* 
+
+  .Checkout{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow-x:hidden;
+    margin: 0 auto;
+    } */

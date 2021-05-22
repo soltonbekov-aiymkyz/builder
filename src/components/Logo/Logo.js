@@ -1,6 +1,5 @@
 import classes from "./Logo.module.css";
 import logo from "../../Images/skyscaperlogo.svg";
-
 const Logo = () => {
     return (
         <div className={classes.logo}>
@@ -11,3 +10,4 @@ const Logo = () => {
 }
 
 export default Logo;
+
