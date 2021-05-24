@@ -6,5 +6,6 @@
     font-size: 1rem;
     line-height: 45px;
     text-align: center;
-    border: 10px double rgb(184, 225, 241);
+    border: 13px double rgb(184, 225, 241);
+   background-color: rgb(250, 219, 250);
     }
