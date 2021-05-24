@@ -111,7 +111,9 @@ export const restore = (dispatch) => {
 
 export const timeout = (dispatch, seconds) => setTimeout(() => logout(dispatch), seconds * 1000);
 
-const key = "AIzaSyBmNRW4Dy30bYbbVl7kHd3d_HbPTh4o9R8";
+// const key = "AIzaSyBmNRW4Dy30bYbbVl7kHd3d_HbPTh4o9R8";
+
+const key = "AIzaSyBfTFSn5YE88Wky059aG7by8EBYUxis81g";
 const signInUrl = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=" + key;
 const signUpUrl = "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=" + key;
 export const auth = (dispatch, method, email, password) => axios
