@@ -15,3 +15,44 @@
      align-items: center;
      justify-content: center;
 }  
+  .Button{
+      display: flex;
+      justify-content: center;
+      border: none;
+      text-align: center;
+      cursor: pointer;
+      text-transform: uppercase;
+      outline: none;
+      overflow: hidden;
+      position: relative;
+      color: #fff;
+      font-weight: 700;
+      font-size: 15px;
+      background-color: #f6d2d9;
+      outline: none;
+      padding: 5px 5px;
+      margin: 0 auto;
+      /* box-shadow: 0 5px 15px rgba(0,0,0,0.20); */
+      border-radius: 10px;
+  }
+  .Button span{
+  position: relative; 
+  z-index: 1;
+  }
+  .Button:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 490%;
+      width: 140%;
+      background-image: linear-gradient(to top, #76b3cf 0%, #0892a1 100%);
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+      -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+      transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    }
+.Button:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
