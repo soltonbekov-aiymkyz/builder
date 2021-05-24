@@ -50,20 +50,18 @@
 
 // export default App;
 
-
 import Layout from "./components/Layout/Layout";
 import SkyscaperBuilder from "./components/SkyscaperBuilder/SkyscaperBuilder";
 import Checkout from "./components/Checkout/Checkout";
-import Orders from "./components/Orders/Orders";
 import "./App.css";
 import { Redirect, Route, Switch } from "react-router";
+import Orders from "./components/Orders/Orders";
 import Auth from "./components/Auth/Auth";
 import Logout from "./components/Logout/Logout";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import { restore } from "./store/actions/auth";
-
 
 
 const App = () => {

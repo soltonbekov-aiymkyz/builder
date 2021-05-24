@@ -1,4 +1,3 @@
-  
 import React from "react";
 import axios from "../../axios";
 import { start, auth } from "../../store/actions/auth";
@@ -63,7 +62,6 @@ export default withAxios(() => {
     </div>
   );
 }, axios);
-
 
 
 //wordpress

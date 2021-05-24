@@ -1,4 +1,6 @@
-import SkyscaperPreview from "../SkyscaperBuilder/SkyscaperPreview/SkyscaperPreview";
+// import  SkyscaperPreview from "../SkyscaperBuilder/SkyscaperPreview/SkyscaperPreview";
+
+  import SkyscaperPreview from "../SkyscaperBuilder/SkyscaperPreview/SkyscaperPreview"
 import CheckoutForm from "./CheckoutForm/CheckoutForm";
 import classes from "./Checkout.module.css";
 import axios from "../../axios";
@@ -17,7 +19,7 @@ const Checkout = ({ history }) => {
   function submitCallback(event) {
     const data = new FormData(event.target);
 
-    axios.post('/orders.json?auth=' + token, {
+    axios.post('/orders.json?auth=' + token,{
       name: data.get('name'),
       address: data.get('address'),
       phone: data.get('phone'),
@@ -30,7 +32,7 @@ const Checkout = ({ history }) => {
 
     event.preventDefault();
   }
-
+  
   return (
     <div className={classes.Checkout}>
       <SkyscaperPreview levels={levels} price={price} />
