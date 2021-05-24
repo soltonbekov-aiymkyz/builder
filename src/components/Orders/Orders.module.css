@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     font-size: 1rem;
-    line-height: 55px;
-    border: 4px solid red;
+    line-height: 45px;
+    border: 10px double rgb(184, 225, 241);
+   
     }
