@@ -18,6 +18,9 @@ return (
              <div className={classes.cloImage}></div>
              <div className={classes.seaImage}></div>
              <div className={classes.travaImage}></div>
+
+             <div className={classes.peaceImage}></div>
+
              <SkyscaperLevel type="floor0" />
          
             {result}
