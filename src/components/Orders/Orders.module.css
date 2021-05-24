@@ -1,9 +1,10 @@
   
 .Orders{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     font-size: 1rem;
     line-height: 45px;
+    text-align: center;
     border: 10px double rgb(184, 225, 241);
-   
     }
