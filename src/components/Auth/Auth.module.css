@@ -10,5 +10,7 @@
 }
 input{
  border: rgb(235, 151, 228) 4px double;
+ width: 150px;
+ height: 30px;
 }
 
