@@ -1,0 +1,13 @@
+.Auth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+input{
+ border: rgb(235, 151, 228) 4px double;
+}
