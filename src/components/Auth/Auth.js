@@ -13,11 +13,11 @@ export default withAxios(() => {
   const location = useLocation();
 
   const formSubmitted = (event) => {
-    start(dispatch);
+    dispatch(start());
 
     const data = new FormData(event.target);
     const method = event.nativeEvent.submitter.innerText === "Sign in" ? "signin" : "signup";
-    auth(dispatch, method, data.get("email"), data.get("password"));
+    dispatch(auth(method, data.get("email"), data.get("password")));
 
     event.preventDefault();
   };
