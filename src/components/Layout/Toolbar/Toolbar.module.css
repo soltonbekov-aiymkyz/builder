@@ -6,15 +6,14 @@
     top: 0;
     left: 0;
     padding: 0 1rem;
-    font-size: 28px;
+    font-size: 35px;
+    
      color: black;
     background-color:  #f6d2d9;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   }
 
-  /* .Toolbar.red{
-    background-color:red;
-  } */
+ 
   @media (max-width: 549px) {
     .Toolbar nav {
       display: none;
