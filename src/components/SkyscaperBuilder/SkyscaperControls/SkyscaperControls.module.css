@@ -3,7 +3,7 @@
      width: 280px;
      height:420px;
      padding: 1rem;
-     background-color:#f6d2d9;
+     background-color:#f6d2d9; 
      color: black;
      border-radius: 30px;
      line-height: 40px;
@@ -14,7 +14,9 @@
      flex-flow: column nowrap;
      align-items: center;
      justify-content: center;
+     
 }  
+
   .Button{
       display: flex;
       justify-content: center;
@@ -25,7 +27,7 @@
       outline: none;
       overflow: hidden;
       position: relative;
-      color: #fff;
+      color: brown;
       font-weight: 700;
       font-size: 15px;
       background-color: #f6d2d9;
@@ -33,8 +35,8 @@
       padding: 5px 5px;
       margin: 0 auto;
       border-radius: 10px;
-  }
-  .Button span{
+  } 
+   .Button span{
   position: relative; 
   z-index: 1;
   }
@@ -54,4 +56,4 @@
 .Button:hover:after {
   -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
-}
+} 
