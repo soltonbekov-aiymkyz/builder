@@ -9,7 +9,7 @@ const OrderSummary = ({levels, price}) => {
          floor5:"plant house",
     }
     const results =Object.keys(levels)
-     .map(type => <li>{labels[type]} : {levels[type]}</li>)
+     .map(type => <li key={type}>{labels[type]} : {levels[type]}</li>)
     return ( 
         <div className={classes.OrderSummary}>
             <h3>Order Summary:</h3>
