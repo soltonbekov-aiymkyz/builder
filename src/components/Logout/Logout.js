@@ -6,7 +6,7 @@ const Logout = ({ history }) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    logout(dispatch);
+    dispatch(logout());
     history.replace("/");
   }, [dispatch, history]);
 
